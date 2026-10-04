@@ -239,3 +239,23 @@ input, textarea {
 .trust-section li {
   margin-bottom: 0.5rem;
 }
+
+/* Promotional & Feature Highlight Cards */
+.feature-promo-card {
+  border-style: solid !important;
+  border-color: var(--brand-focus) !important;
+  position: relative;
+}
+
+.badge-tag {
+  display: inline-block;
+  background-color: var(--panel-surface);
+  color: var(--brand-focus);
+  border: 1px solid var(--brand-focus);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.02em;
+}
