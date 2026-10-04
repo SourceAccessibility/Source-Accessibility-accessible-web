@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Source Accessibility | Inclusive Digital Accessibility & Research</title>
+  <meta name="description" content="Source Accessibility helps digital teams design, test, and improve accessible products grounded in lived experience and WCAG 2.2 AA standards.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- WCAG 2.4.1 Skip Link -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <div class="container header-top">
+      <a href="index.html" class="logo-link" aria-label="Source Accessibility homepage">
+        <strong>Source Accessibility</strong>
+      </a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    
+    <!-- Hero / Intro -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <h1 id="hero-heading">Accessibility shaped by lived experience</h1>
+        <p class="hero-intro">
+          We help digital teams build accessible products through expert technical evaluation and authentic testing with disabled and neurodivergent users.
+        </p>
+        <p class="hero-support">
+          Our work combines deep accessibility expertise with real-world user testing to understand how digital services work in practice across screen readers, Voice Control, magnification, keyboard-only, and switch access.
+        </p>
+        <a href="#contact" class="button-primary">Talk to us about a project</a>
+      </div>
+    </section>
+
+    <!-- Core Services -->
+    <section id="services" class="services-section" aria-labelledby="services-heading">
+      <div class="container">
+        <h2 id="services-heading">Our Services</h2>
+        <p class="section-intro">
+          Bespoke accessibility solutions tailored to your product context, audience, and release cycles:
+        </p>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Inclusive Research &amp; User Testing</h3>
+            <p>Task-based studies with disabled and neurodivergent participants using real assistive technologies to uncover genuine lived-experience barriers.</p>
+          </article>
+
+          <article class="service-card">
+            <h3>Assistive Technology Health Checks</h3>
+            <p>Rapid expert reviews across screen readers (VoiceOver, NVDA, JAWS), Voice Control, magnification, keyboard, and switch navigation to catch blockers early.</p>
+          </article>
+
+          <article class="service-card">
+            <h3>Accessibility Audits &amp; Strategy</h3>
+            <p>EAA and WCAG 2.2 AA-aligned reviews that translate complex findings into clear, ticket-ready remediation roadmaps for product teams.</p>
+          </article>
+
+          <article class="service-card">
+            <h3>Strategic Procurement Testing</h3>
+            <p>Evaluating third-party software, vendors, and digital tools during procurement to guarantee accessibility compliance before purchase.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading">Let's talk about your product</h2>
+        <p>Whether you are starting a new build or improving an existing service, we are happy to discuss your goals.</p>
+        
+        <form action="#" method="post" novalidate class="contact-form">
+          <div class="form-group">
+            <label for="full-name">Full name <span class="required" aria-hidden="true">*</span></label>
+            <input type="text" id="full-name" name="full-name" required autocomplete="name">
+          </div>
+
+          <div class="form-group">
+            <label for="email-address">Email address <span class="required" aria-hidden="true">*</span></label>
+            <input type="email" id="email-address" name="email-address" required autocomplete="email">
+          </div>
+
+          <div class="form-group">
+            <label for="project-details">Project details</label>
+            <textarea id="project-details" name="project-details" rows="5"></textarea>
+          </div>
+
+          <button type="submit" class="button-primary">Send message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Source Accessibility Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

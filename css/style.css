@@ -1,0 +1,183 @@
+/* Color Palette & Variables */
+:root {
+  --bg-body: #020617;        /* Deep navy */
+  --panel-surface: #0f172a;  /* Surface card navy */
+  --text-main: #e5e7eb;      /* Primary light text */
+  --text-muted: #cbd5f5;     /* Secondary blue-grey text */
+  --brand-primary: #60a5fa;  /* Accent blue */
+  --brand-focus: #a5b4fc;    /* Visible focus indigo */
+  --button-bg: #b72659;      /* Brand CTA pink */
+  --white: #ffffff;
+  --border-color: #334155;
+  --container-width: 70rem;
+}
+
+/* Reset & Box Model */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--text-main);
+  background-color: var(--bg-body);
+  font-size: 1.125rem;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* WCAG 2.4.11 / 2.4.13: High Contrast Focus Rings */
+*:focus-visible {
+  outline: 3px solid var(--brand-focus) !important;
+  outline-offset: 3px !important;
+}
+
+/* WCAG 2.4.1: Skip Link */
+.skip-link {
+  position: absolute;
+  top: -10rem;
+  left: 1rem;
+  padding: 1rem 1.5rem;
+  background: var(--brand-primary);
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+  z-index: 9999;
+  border-radius: 0 0 8px 8px;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Header & Navigation */
+header {
+  background: var(--panel-surface);
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-link {
+  color: var(--text-main);
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-list a {
+  color: var(--text-main);
+  text-decoration: none;
+  font-weight: 600;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-list a[aria-current="page"] {
+  border-bottom: 2px solid var(--brand-primary);
+}
+
+/* Typography */
+h1, h2, h3 {
+  color: var(--text-main);
+  line-height: 1.3;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 1.85rem; color: var(--brand-primary); }
+
+p { max-width: 65ch; }
+
+/* Sections */
+section {
+  padding: 3.5rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Buttons (WCAG 2.5.8 Touch Target Minimum 44x44px) */
+.button-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--button-bg);
+  color: var(--white);
+  border: 2px solid var(--button-bg);
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.button-primary:hover {
+  background-color: var(--white);
+  color: var(--button-bg);
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.service-card {
+  background: var(--panel-surface);
+  border: 1px dashed var(--brand-primary);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+/* Forms (WCAG 1.4.11 Non-Text Contrast) */
+.contact-form {
+  max-width: 38rem;
+  margin-top: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.required {
+  color: #f87171;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid var(--text-muted); /* Minimum 3:1 contrast against bg */
+  border-radius: 6px;
+  background-color: var(--panel-surface);
+  color: var(--text-main);
+  font-size: 1rem;
+}
