@@ -6,7 +6,7 @@
   --text-muted: #cbd5f5;     /* Secondary blue-grey text */
   --brand-primary: #60a5fa;  /* Accent blue */
   --brand-focus: #a5b4fc;    /* Visible focus indigo */
-  --button-bg: #b72659;      /* Brand CTA pink */
+  --button-bg: #bb285e;      /* Brand CTA pink */
   --white: #ffffff;
   --border-color: #334155;
   --container-width: 70rem;
@@ -219,6 +219,13 @@ input, textarea {
   text-underline-offset: 0.2em;
 }
 
+.contact-link {
+  color: var(--brand-primary);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
 .external-icon {
   display: inline-block;
   vertical-align: middle;
@@ -258,4 +265,38 @@ input, textarea {
   border-radius: 4px;
   margin-bottom: 0.75rem;
   letter-spacing: 0.02em;
+}
+
+/* Contact Options Card Layout */
+.contact-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.contact-card {
+  background: var(--panel-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.contact-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: var(--text-main);
+}
+
+.contact-card p {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.contact-link {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--brand-primary);
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
 }
