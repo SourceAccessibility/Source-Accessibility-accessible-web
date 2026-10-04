@@ -14,15 +14,21 @@
 
   <header>
     <div class="container header-top">
-      <a href="index.html" class="logo-link" aria-label="Source Accessibility homepage">
-        <strong>Source Accessibility</strong>
-      </a>
+      <div class="header-brand">
+        <a href="index.html" class="logo-link" aria-label="Source Accessibility homepage">
+          <img src="assets/img/SourceAccessibility Transp WebsiteBlue.png" alt="" class="header-logo">
+        </a>
+        <div class="brand-text">
+          <span class="site-name">Source Accessibility</span>
+          <span class="site-tagline">Accessibility shaped by lived experience</span>
+        </div>
+      </div>
       <nav aria-label="Primary navigation">
         <ul class="nav-list">
           <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -91,6 +97,75 @@
         <div style="margin-top: 2.5rem; text-align: center;">
           <a href="services.html" class="button-primary">View all capabilities &amp; programmes</a>
         </div>
+      </div>
+    </section>
+
+    <!-- Trusted By / Testimonials Section (Horizontal List Layout) -->
+    <section class="trusted-by" id="trusted-by" aria-labelledby="trusted-heading">
+      <div class="container">
+        <h2 id="trusted-heading">Trusted by digital &amp; accessibility leaders</h2>
+        <p class="section-intro">
+          Here is what accessibility leaders, engineering coaches, and institutional partners say about working with Source Accessibility:
+        </p>
+
+        <ul class="testimonial-stacked-list">
+          <li>
+            <article class="testimonial-card horizontal">
+              <div class="testimonial-left">
+                <p class="testimonial-quote">
+                  "Source Accessibility provides invaluable accessibility consultancy to Skyscanner, supporting us primarily with inclusive user testing. Her technical background and genuine passion for accessibility makes a real impact on how we design and build for disabled users."
+                </p>
+              </div>
+              <div class="testimonial-right">
+                <img src="assets/img/Skyscanner_Logo_LockupVertical_SkyBlue_RGB.png" alt="Skyscanner logo" class="testimonial-logo tall-logo">
+                <p class="testimonial-name">Heather Hepburn</p>
+                <p class="testimonial-role">Head of Accessibility, Skyscanner</p>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="testimonial-card horizontal">
+              <div class="testimonial-left">
+                <p class="testimonial-quote">
+                  "Source Accessibility helped us review accessibility across our rebranded website and gave clear, practical recommendations to improve the experience for all users."
+                </p>
+              </div>
+              <div class="testimonial-right">
+                <img src="assets/img/makers-logo.png" alt="Makers Academy logo" class="testimonial-logo soft-bg">
+                <p class="testimonial-name">Neil Studd</p>
+                <p class="testimonial-role">Software Engineering Coach, Makers</p>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="testimonial-card horizontal">
+              <div class="testimonial-left">
+                <p class="testimonial-quote">
+                  "Source Accessibility supported us with an accessibility audit and implementation guidance, helping to improve the usability of our website for a wider audience."
+                </p>
+              </div>
+              <div class="testimonial-right">
+                <img src="assets/img/trefoil-house-logo.png" alt="Trefoil Trust logo" class="testimonial-logo soft-bg">
+                <p class="testimonial-name">Dennis Trueland</p>
+                <p class="testimonial-role">Chair of Trustees, Trefoil Trust</p>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="testimonial-card horizontal">
+              <div class="testimonial-left">
+                <p class="testimonial-quote">
+                  "As Industrial Liaison for the School of Computer Science at the University of St Andrews, I am used to collaborating with external organisations. However, it is rare to come across someone who makes the experience as straightforward and joyful as Marie. Source Accessibility played a key intermediary role in our collaboration with Skyscanner, creating accessibility documentation and facilitating lived-experience demos. Marie's practical guidance and expertise made a real impact on how our students incorporate accessibility into their professional practice."
+                </p>
+              </div>
+              <div class="testimonial-right">
+                <img src="assets/img/01-foundation-black-text.png" alt="University of St Andrews logo" class="testimonial-logo tall-logo soft-bg">
+                <p class="testimonial-name">Dr Kirsty Ross</p>
+                <p class="testimonial-role">Industrial Liaison Officer, University of St Andrews</p>
+              </div>
+            </article>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -173,8 +248,39 @@
   </main>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2026 Source Accessibility Ltd. All rights reserved.</p>
+    <div class="container footer-content">
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="accessibility-statement.html">Accessibility Statement</a></li>
+          <li>
+            <a href="assets/docs/Cyber%20Security.pdf" target="_blank" rel="noopener" class="pdf-link">
+              Cyber Security (PDF)
+              <span class="sr-only">(opens in a new tab)</span>
+              <svg class="external-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="assets/docs/carbon-reduction-plan.pdf" target="_blank" rel="noopener" class="pdf-link">
+              Carbon Reduction Plan (PDF)
+              <span class="sr-only">(opens in a new tab)</span>
+              <svg class="external-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <p class="copyright">&copy; 2026 Source Accessibility Ltd. All rights reserved.</p>
     </div>
   </footer>
 

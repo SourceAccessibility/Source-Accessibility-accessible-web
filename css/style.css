@@ -65,14 +65,47 @@ header {
 
 .header-top {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .logo-link {
   color: var(--text-main);
   font-size: 1.5rem;
   text-decoration: none;
+}
+
+.header-logo {
+  height: 75px;
+  width: auto;
+  display: block;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-name {
+  font-size: 2.25rem;
+  font-weight: 900;
+  color: var(--text-main);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.site-tagline {
+  font-size: 1rem;
+  color: var(--brand-focus);
+  font-weight: 500;
+  margin-top: 0.2rem;
 }
 
 .nav-list {
@@ -247,6 +280,22 @@ input, textarea {
   margin-bottom: 0.5rem;
 }
 
+@media (max-width: 800px) {
+  .header-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .header-logo {
+    height: 60px;
+  }
+
+  .site-name {
+    font-size: 1.75rem;
+  }
+}
+
 /* Promotional & Feature Highlight Cards */
 .feature-promo-card {
   border-style: solid !important;
@@ -299,4 +348,158 @@ input, textarea {
   color: var(--brand-primary);
   text-decoration: underline;
   text-underline-offset: 0.25em;
+}
+
+/* Footer Styling */
+footer {
+  background-color: var(--panel-surface);
+  padding: 2.5rem 0;
+  border-top: 1px solid var(--border-color);
+  margin-top: 3rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem 2rem;
+  align-items: center;
+}
+
+.footer-links a {
+  color: var(--text-main);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  font-size: 1rem;
+}
+
+.footer-links a[aria-current="page"] {
+  font-weight: 700;
+  color: var(--brand-primary);
+}
+
+.copyright {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Testimonial Section Base */
+.trusted-by {
+  padding: var(--section-padding, 3.5rem 1.5rem);
+  background-color: var(--bg-body, #020617);
+}
+
+/* Stacked List Container */
+.testimonial-stacked-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+/* Card Styling for Horizontal Rows */
+.testimonial-card.horizontal {
+  background: var(--panel-surface, #0f172a);
+  border: 2px dashed var(--accent-soft, #d6c1b1);
+  border-radius: 1rem;
+  padding: 1.75rem 2.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.testimonial-card.horizontal:hover {
+  border-color: var(--brand-primary, #60a5fa);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Left Column: Quote Text */
+.testimonial-left {
+  flex: 2;
+}
+
+.testimonial-quote {
+  margin: 0;
+  font-size: 1.05rem;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--text-main, #e5e7eb);
+}
+
+/* Right Column: Logo & Author Details */
+.testimonial-right {
+  flex: 1;
+  min-width: 14rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  gap: 0.5rem;
+  border-left: 1px solid var(--border-color, #1f2937);
+  padding-left: 1.75rem;
+}
+
+/* Logos */
+.testimonial-logo {
+  max-width: 130px;
+  height: auto;
+  max-height: 50px;
+  object-fit: contain;
+}
+
+.testimonial-logo.soft-bg {
+  background: #ffffff;
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+}
+
+.testimonial-logo.tall-logo {
+  max-width: 150px;
+  max-height: 55px;
+}
+
+.testimonial-name {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-main, #e5e7eb);
+}
+
+.testimonial-role {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--text-muted, #cbd5f5);
+}
+
+/* Responsive Behavior for Tablets & Mobile Screens */
+@media (max-width: 800px) {
+  .testimonial-card.horizontal {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem;
+    gap: 1.25rem;
+  }
+
+  .testimonial-right {
+    align-items: flex-start;
+    text-align: left;
+    border-left: none;
+    border-top: 1px solid var(--border-color, #1f2937);
+    padding-left: 0;
+    padding-top: 1rem;
+    width: 100%;
+  }
 }
