@@ -195,3 +195,47 @@ input, textarea {
     grid-template-columns: 1fr;
   }
 }
+/* Screen Reader Only Utility Class (WCAG 2.4.4) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* External Link & PDF Indicator Styling */
+.pdf-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--brand-primary);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.external-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.15rem;
+}
+
+.trust-section {
+  padding: 3.5rem 0;
+  background-color: var(--bg-body);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.trust-section ul {
+  padding-left: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.trust-section li {
+  margin-bottom: 0.5rem;
+}
