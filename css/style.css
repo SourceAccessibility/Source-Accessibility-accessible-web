@@ -181,3 +181,17 @@ input, textarea {
   color: var(--text-main);
   font-size: 1rem;
 }
+
+/* 4 Threads Structured 2x2 Grid Layout */
+.threads-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  .threads-grid {
+    grid-template-columns: 1fr;
+  }
+}
