@@ -6,10 +6,12 @@
   --text-muted: #cbd5f5;     /* Secondary blue-grey text */
   --brand-primary: #60a5fa;  /* Accent blue */
   --brand-focus: #a5b4fc;    /* Visible focus indigo */
+  --bg-alt: #0f172a;
   --button-bg: #bb285e;      /* Brand CTA pink */
   --white: #ffffff;
   --border-color: #334155;
-  --container-width: 70rem;
+  --container-width: 80rem;
+  --content-narrow: 52rem;
 }
 
 /* Reset & Box Model */
@@ -28,6 +30,12 @@ body {
 
 .container {
   max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.container-narrow {
+  max-width: 52rem;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
@@ -140,10 +148,117 @@ h2 { font-size: 1.85rem; color: var(--brand-primary); }
 
 p { max-width: 65ch; }
 
-/* Sections */
-section {
-  padding: 3.5rem 0;
+/* Left-Aligned Hero Styling */
+.hero {
+  padding: 3.5rem 0 3rem;
+  background-color: var(--bg-alt);
   border-bottom: 1px solid var(--border-color);
+  text-align: left;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--text-main);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+.hero-intro {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text-main);
+  max-width: 65ch;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.hero-support {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 65ch;
+  margin-bottom: 0;
+  line-height: 1.65;
+}
+
+/* Main Content Section Banding */
+main section {
+  width: 100%;
+  padding: 4rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+main section:nth-child(even) {
+  background-color: var(--panel-surface);
+}
+
+main section.hero {
+  background-color: var(--bg-alt);
+}
+
+/* Statement / Legal Panels */
+.statement-card {
+  background-color: var(--panel-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2.25rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.statement-card h2,
+.statement-card h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--brand-primary);
+}
+
+.statement-card ul {
+  padding-left: 1.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.statement-card p {
+  color: var(--text-main);
+  margin-bottom: 1rem;
+  line-height: 1.65;
+}
+
+.statement-card p:last-child {
+  margin-bottom: 0;
+}
+
+.statement-card li {
+  margin-bottom: 0.75rem;
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+.statement-card li strong {
+  color: var(--text-main);
+}
+
+/* Breadcrumbs / Page Back Link */
+.breadcrumb {
+  margin-bottom: 1.5rem;
+}
+
+.breadcrumb-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--brand-primary);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.breadcrumb-back:hover,
+.breadcrumb-back:focus-visible {
+  color: var(--text-main);
 }
 
 /* Buttons (WCAG 2.5.8 Touch Target Minimum 44x44px) */
@@ -172,9 +287,21 @@ section {
 /* Services Grid */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .service-card {
@@ -259,6 +386,12 @@ input, textarea {
   text-underline-offset: 0.2em;
 }
 
+.email-link {
+  color: #60a5fa;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
 .external-icon {
   display: inline-block;
   vertical-align: middle;
@@ -310,10 +443,34 @@ input, textarea {
   border: 1px solid var(--brand-focus);
   font-size: 0.85rem;
   font-weight: 700;
-  padding: 0.2rem 0.6rem;
+  padding: 0.25rem 0.65rem;
   border-radius: 4px;
   margin-bottom: 0.75rem;
   letter-spacing: 0.02em;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.badge-tag-link {
+  display: inline-block;
+  text-decoration: none !important;
+  margin-bottom: 0.75rem;
+}
+
+.badge-tag-link .badge-tag {
+  margin-bottom: 0;
+}
+
+.badge-tag-link:hover .badge-tag,
+.badge-tag-link:focus-visible .badge-tag {
+  background-color: var(--brand-focus);
+  color: var(--bg-body);
+  border-color: var(--brand-focus);
+}
+
+.badge-tag-link:focus-visible {
+  outline: 3px solid var(--brand-focus);
+  outline-offset: 3px;
+  border-radius: 4px;
 }
 
 /* Contact Options Card Layout */
@@ -502,4 +659,23 @@ footer {
     padding-top: 1rem;
     width: 100%;
   }
+}
+
+/* Keep service enquiry buttons aligned at the bottom of each card */
+.service-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card-action {
+  width: 100%;
+  margin-top: auto;
+  padding-top: 1.5rem;
+}
+
+.card-enquire-btn {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  white-space: normal;
 }

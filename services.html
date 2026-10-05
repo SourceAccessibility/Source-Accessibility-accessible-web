@@ -3,34 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services | Source Accessibility</title>
-  <meta name="description" content="Explore Source Accessibility services: inclusive research, assistive technology testing, WCAG 2.2 AA audits, procurement testing, value-driven design, and AI-agent readiness.">
+  <title>Services &amp; Capabilities | Source Accessibility</title>
+  <meta name="description" content="Explore Source Accessibility services: inclusive research, assistive technology health checks, WCAG 2.2 AA audits, procurement testing, value-driven design, and AI-agent readiness.">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="top">
 
   <!-- WCAG 2.4.1 Skip Link -->
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <header>
-    <div class="container header-top">
-      <div class="header-brand">
-        <a href="index.html" class="logo-link" aria-label="Source Accessibility homepage">
-          <img src="assets/img/SourceAccessibility Transp WebsiteBlue.png" alt="" class="header-logo">
-        </a>
-        <div class="brand-text">
-          <span class="site-name">Source Accessibility</span>
-          <span class="site-tagline">Accessibility shaped by lived experience</span>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-top">
+        <div class="header-brand">
+          <a class="header-logo-link" href="index.html" aria-label="Source Accessibility home">
+            <img class="header-logo" src="assets/img/SourceAccessibility Transp WebsiteBlue.png" alt="Source Accessibility logo">
+          </a>
+          <div class="brand-text">
+            <span class="site-name">Source Accessibility</span>
+            <span class="site-tagline">Inclusive digital accessibility, testing &amp; research</span>
+          </div>
         </div>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html" aria-current="page">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav aria-label="Primary navigation">
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html" aria-current="page">Services</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-      </nav>
     </div>
   </header>
 
@@ -38,18 +41,18 @@
 
     <!-- Hero / Intro -->
     <section class="hero" aria-labelledby="services-hero-heading">
-      <div class="container">
+      <div class="container-narrow">
         <h1 id="services-hero-heading">Digital Accessibility Services</h1>
         <p class="hero-intro">
-          Bespoke accessibility solutions tailored to your service, product architecture, audience, and release context.
+          Bespoke accessibility solutions tailored to your service architecture, release cycles, and business context.
         </p>
         <p class="hero-support">
-          Our services combine technical evaluation with lived experience, helping teams design, improve, and validate inclusive digital journeys aligned with WCAG 2.2 AA, PSBAR 2018, and the European Accessibility Act (EAA).
+          Our capabilities combine expert technical evaluation with authentic lived experience, helping teams design, improve, and validate inclusive digital journeys aligned with WCAG 2.2 Level AA, PSBAR 2018, and the European Accessibility Act (EAA).
         </p>
       </div>
     </section>
 
-    <!-- Full Capabilities Grid (9 Cards) -->
+    <!-- Capabilities & Programmes (9 Cards Grid) -->
     <section aria-labelledby="capabilities-heading">
       <div class="container">
         <h2 id="capabilities-heading">Capabilities &amp; Programmes</h2>
@@ -57,82 +60,145 @@
         <div class="services-grid">
           
           <!-- Card 1 -->
-          <article class="service-card">
+          <article class="service-card feature-promo-card" id="inclusive-research">
+            <span class="badge-tag">Lived Experience</span>
             <h3>Inclusive Research &amp; User Testing</h3>
             <p>Task-based research and moderated testing with disabled and neurodivergent participants using real assistive technologies. We uncover genuine barriers, workarounds and opportunities across key digital journeys.</p>
+            <div class="service-card-action">
+              <a href="mailto:info@sourceaccessibility.co.uk?subject=Inquiry%20about%20Inclusive%20Research%20%26%20User%20Testing&body=Hello%20Marie%2C%0A%0AI%20would%20like%20to%20discuss%20an%20Inclusive%20Research%20%26%20User%20Testing%20engagement%20for%20our%20product.%0A%0AProject%20details%3A%0ATimeline%3A" class="button-primary card-enquire-btn">
+                Enquire about Inclusive Research
+              </a>
+            </div>
           </article>
 
           <!-- Card 2 -->
-          <article class="service-card">
-            <h3>Assistive Technology Testing</h3>
+          <article class="service-card feature-promo-card" id="at-testing">
+            <span class="badge-tag">Technical Validation</span>
+            <h3>Assistive Technology Health Checks</h3>
             <p>Expert testing across screen readers including VoiceOver, NVDA and JAWS, alongside Voice Control, magnification, keyboard and switch access. Designed to identify accessibility blockers early and validate how experiences work in practice.</p>
+            <div class="service-card-action">
+              <a href="mailto:info@sourceaccessibility.co.uk?subject=Inquiry%20about%20Assistive%20Technology%20Health%20Checks&body=Hello%20Marie%2C%0A%0AI%20would%20like%20to%20discuss%20an%20Assistive%20Technology%20Health%20Check%20for%20our%20digital%20service.%0A%0AProject%20details%3A%0ATimeline%3A" class="button-primary card-enquire-btn">
+                Enquire about AT Health Checks
+              </a>
+            </div>
           </article>
 
           <!-- Card 3 -->
-          <article class="service-card">
+          <article class="service-card feature-promo-card" id="audits">
+            <span class="badge-tag">Compliance &amp; EAA</span>
             <h3>Accessibility Audits &amp; Action Roadmaps</h3>
             <p>WCAG 2.2 Level AA and applicable EAA-aligned reviews that combine technical evaluation with practical recommendations. Findings are prioritised and translated into clear, actionable remediation for product and engineering teams.</p>
+            <div class="service-card-action">
+              <a href="mailto:info@sourceaccessibility.co.uk?subject=Inquiry%20about%20Accessibility%20Audits%20%26%20Roadmaps&body=Hello%20Marie%2C%0A%0AI%20would%20like%20to%20request%20information%20on%20an%20Accessibility%20Audit%20and%20remediation%20roadmap.%0A%0AProduct%20URL%2FApp%3A%0ATarget%20Deadline%3A" class="button-primary card-enquire-btn">
+                Enquire about Audits &amp; Strategy
+              </a>
+            </div>
           </article>
 
           <!-- Card 4 -->
-          <article class="service-card">
+          <article class="service-card feature-promo-card" id="procurement">
+            <span class="badge-tag">Vendor Assurance</span>
             <h3>Strategic Procurement &amp; Supplier Testing</h3>
-            <p>Accessibility evaluation of third-party software, vendors, white-label services and digital tools before procurement decisions are made—helping organisations identify accessibility risks and make more informed supplier choices.</p>
+            <p>Accessibility evaluation of third-party software, vendors, white-label services and digital tools before procurement decisions are made—helping organisations identify accessibility risks and make informed supplier choices.</p>
+            <div class="service-card-action">
+              <a href="mailto:info@sourceaccessibility.co.uk?subject=Inquiry%20about%20Strategic%20Procurement%20Testing&body=Hello%20Marie%2C%0A%0AWe%20are%20evaluating%20third-party%20vendors%20and%20would%20like%20to%20discuss%20Procurement%20Accessibility%20Testing.%0A%0AVendor%2FTool%20details%3A%0AProcurement%20Timeline%3A" class="button-primary card-enquire-btn">
+                Enquire about Procurement Testing
+              </a>
+            </div>
           </article>
 
           <!-- Card 5 -->
-          <article class="service-card">
-            <h3>Accessibility Strategy, Training &amp; Mentoring</h3>
-            <p>Practical guidance, workshops, live assistive technology demonstrations and 1:1 mentoring to build accessibility capability across product, UX, research, design and engineering teams.</p>
+          <article class="service-card feature-promo-card" id="granular-discovery">
+            <span class="badge-tag">Conversion &amp; Opportunity</span>
+            <h3>Granular Journey Discovery &amp; Moderated Research</h3>
+            <p>We go beyond isolated WCAG checks to understand how disabled and neurodivergent people experience digital journeys in practice. Working with our user panel, we examine interactions at a granular level across assistive technologies to uncover friction, workarounds and points of exclusion.</p>
+            <div class="service-card-action">
+              <a href="mailto:info@sourceaccessibility.co.uk?subject=Inquiry%20about%20Granular%20Journey%20Discovery&body=Hello%20Marie%2C%0A%0AWe%20would%20like%20to%20discuss%20Granular%20Journey%20Discovery%20and%20Moderated%20Research%20for%20our%20core%20user%20flows.%0A%0AProduct%20context%3A%0ATimeline%3A" class="button-primary card-enquire-btn">
+                Enquire about Journey Discovery
+              </a>
+            </div>
           </article>
 
           <!-- Card 6 -->
-          <article class="service-card feature-promo-card">
-            <span class="badge-tag">Lived Experience</span>
-            <h3>Granular Journey Discovery &amp; Moderated Research</h3>
-            <p>We go beyond isolated WCAG checks to understand how disabled and neurodivergent people experience digital journeys in practice. Working with our user panel, we examine interactions at a granular level across assistive technologies to uncover friction, workarounds and points of exclusion that standard testing can miss.</p>
+          <article class="service-card feature-promo-card" id="ai-readiness">
+            <span class="badge-tag">Innovation &amp; Integrity</span>
+            <h3>AI-Agent Readiness &amp; Human-Verified Assurance</h3>
+            <p>As digital experiences become shaped by AI, we help organisations prepare journeys for emerging AI-agent interactions while keeping real people at the centre. Human-verified testing identifies barriers that synthetic personas and AI simulations overlook.</p>
+            <div class="service-card-action">
+              <a href="mailto:info@sourceaccessibility.co.uk?subject=Inquiry%20about%20AI-Agent%20Readiness%20%26%20Assurance&body=Hello%20Marie%2C%0A%0AWe%20would%20like%20to%20explore%20AI-Agent%20Readiness%20and%20Human-Verified%20Testing%20for%20our%20digital%20platform.%0A%0AProject%20context%3A%0ATimeline%3A" class="button-primary card-enquire-btn">
+                Enquire about AI-Agent Readiness
+              </a>
+            </div>
           </article>
 
           <!-- Card 7 -->
-          <article class="service-card feature-promo-card">
-            <span class="badge-tag">Conversion &amp; Opportunity</span>
-            <h3>Inclusive Design &amp; User Needs</h3>
-            <p>We turn lived-experience insight into practical product improvements. By uncovering unmet access needs and understanding what users are trying to achieve, we help teams create clearer, more inclusive journeys that reduce friction, improve completion and deliver better experiences for everyone.</p>
+          <article class="service-card feature-promo-card" id="capability-building">
+            <span class="badge-tag">Capability Building</span>
+            <h3>Accessibility Strategy, Training &amp; Mentoring</h3>
+            <p>Practical guidance, workshops, live assistive technology demonstrations and 1:1 mentoring to build accessibility capability across product, UX, research, design and engineering teams.</p>
+            <div class="service-card-action">
+              <a href="mailto:info@sourceaccessibility.co.uk?subject=Inquiry%20about%20Accessibility%20Training%20%26%20Mentoring&body=Hello%20Marie%2C%0A%0AWe%20are%20interested%20in%20Accessibility%20Workshops%2C%20Live%20Demos%2C%20or%20Mentoring%20for%20our%20team.%0A%0ATeam%20size%2Froles%3A%0APreferred%20Format%20(Remote%2FLive)%3A" class="button-primary card-enquire-btn">
+                Enquire about Training &amp; Mentoring
+              </a>
+            </div>
           </article>
 
           <!-- Card 8 -->
-          <article class="service-card feature-promo-card">
-            <span class="badge-tag">Innovation &amp; Integrity</span>
-            <h3>AI-Agent Readiness &amp; Human-Verified Assurance</h3>
-            <p>As digital experiences become increasingly shaped by AI, we help organisations prepare journeys for emerging AI-agent interactions while keeping real people at the centre. Human-verified testing helps identify accessibility barriers that synthetic personas and AI simulations can overlook, supporting genuinely usable and accessible digital experiences.</p>
+          <article class="service-card feature-promo-card" id="inclusive-design">
+            <span class="badge-tag">Value-Driven Design</span>
+            <h3>Inclusive Design &amp; Unmet User Needs</h3>
+            <p>We turn lived-experience insight into practical product improvements. By uncovering unmet access needs, we help teams create clearer journeys that reduce friction, improve completion rates, and deliver better experiences for everyone.</p>
+            <div class="service-card-action">
+              <a href="mailto:info@sourceaccessibility.co.uk?subject=Inquiry%20about%20Inclusive%20Design%20%26%20User%20Needs&body=Hello%20Marie%2C%0A%0AWe%20would%20like%20to%20discuss%20Inclusive%20Design%20consultancy%20and%20uncovering%20unmet%20user%20access%20needs.%0A%0AProduct%20context%3A%0ATimeline%3A" class="button-primary card-enquire-btn">
+                Enquire about Inclusive Design
+              </a>
+            </div>
           </article>
 
           <!-- Card 9 -->
-          <article class="service-card feature-promo-card">
+          <article class="service-card feature-promo-card" id="benchmarking">
             <span class="badge-tag">Strategy &amp; Measurement</span>
             <h3>Lived-Experience Benchmarking &amp; Maturity</h3>
-            <p>Establishing repeatable baseline metrics across core user journeys to measure accessibility progress over time. By combining task completion data with lived-experience testing, we help organisations track product maturity, prioritize engineering investment, and demonstrate clear, value-driven accessibility improvements to stakeholders.</p>
+            <p>Establishing repeatable baseline metrics across core user journeys to measure accessibility progress over time. Combining task completion data with lived testing helps track product maturity and demonstrate value.</p>
+            <div class="service-card-action">
+              <a href="mailto:info@sourceaccessibility.co.uk?subject=Inquiry%20about%20Benchmarking%20%26%20Accessibility%20Maturity&body=Hello%20Marie%2C%0A%0AWe%20are%20interested%20in%20establishing%20a%20Repeatable%20Benchmarking%20Framework%20and%20measuring%20accessibility%20maturity.%0A%0AOrganization%20details%3A%0ATimeline%3A" class="button-primary card-enquire-btn">
+                Enquire about Benchmarking
+              </a>
+            </div>
           </article>
 
         </div>
 
         <div style="margin-top: 3rem; text-align: center;">
-          <a href="index.html#contact" class="button-primary">Discuss a tailored programme</a>
+          <a href="index.html#contact" class="button-primary">Discuss a custom engagement</a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <footer>
+  <!-- Global Footer -->
+  <footer class="site-footer">
     <div class="container footer-content">
-      <nav aria-label="Footer navigation">
+      <nav class="footer-nav" aria-label="Footer navigation">
         <ul class="footer-links">
+          <li><a href="#top">Back to top</a></li>
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html" aria-current="page">Services</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="index.html#contact">Contact us</a></li>
           <li><a href="accessibility-statement.html">Accessibility Statement</a></li>
+          <li>
+            <a href="https://calendar.app.google/KPZ3KQfgMN6p5B9H9" target="_blank" rel="noopener" class="pdf-link">
+              Book a 30 min chat
+              <span class="sr-only">(opens in a new tab)</span>
+              <svg class="external-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </li>
           <li>
             <a href="assets/docs/Cyber%20Security.pdf" target="_blank" rel="noopener" class="pdf-link">
               Cyber Security (PDF)

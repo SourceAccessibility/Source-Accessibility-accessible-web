@@ -4,109 +4,136 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accessibility Statement | Source Accessibility</title>
-  <meta name="description" content="Accessibility Statement for Source Accessibility Ltd detailing our conformance with WCAG 2.2 Level AA, testing standards, and direct contact options.">
+  <meta name="description" content="Accessibility Statement for Source Accessibility Ltd detailing WCAG 2.2 AA conformance, testing methodology, and direct feedback routes.">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="top">
 
   <!-- WCAG 2.4.1 Skip Link -->
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <header>
-    <div class="container header-top">
-      <div class="header-brand">
-        <a href="index.html" class="logo-link" aria-label="Source Accessibility homepage">
-          <img src="assets/img/SourceAccessibility Transp WebsiteBlue.png" alt="" class="header-logo">
-        </a>
-        <div class="brand-text">
-          <span class="site-name">Source Accessibility</span>
-          <span class="site-tagline">Accessibility shaped by lived experience</span>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-top">
+        <div class="header-brand">
+          <a class="header-logo-link" href="index.html" aria-label="Source Accessibility home">
+            <img class="header-logo" src="assets/img/SourceAccessibility Transp WebsiteBlue.png" alt="Source Accessibility logo">
+          </a>
+          <div class="brand-text">
+            <span class="site-name">Source Accessibility</span>
+            <span class="site-tagline">Inclusive digital accessibility, testing &amp; research</span>
+          </div>
         </div>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav aria-label="Primary navigation">
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-      </nav>
     </div>
   </header>
 
   <main id="main-content">
+
+    <!-- Hero Section (Left-Aligned) -->
     <section class="hero" aria-labelledby="statement-heading">
-      <div class="container">
+      <div class="container-narrow">
         <h1 id="statement-heading">Accessibility Statement</h1>
         <p class="hero-intro">
-          Source Accessibility Ltd is committed to ensuring digital accessibility for people of all abilities[cite: 2, 59]. We continually improve the user experience for everyone and apply the relevant accessibility standards[cite: 2, 59].
+          Source Accessibility Ltd is committed to ensuring digital accessibility for people of all abilities. We continually apply WCAG 2.2 AA standards to create an inclusive experience for every user.
         </p>
       </div>
     </section>
 
-    <section aria-labelledby="measures-heading">
-      <div class="container">
-        <h2 id="measures-heading">Conformance Status &amp; Standards</h2>
-        <p>
-          The <strong>Web Content Accessibility Guidelines (WCAG) 2.2 Level AA</strong> defines requirements for designers and developers to improve accessibility for people with disabilities[cite: 2, 59, 62].
-        </p>
-        <p>
-          This website is <strong>fully conformant with WCAG 2.2 Level AA</strong>[cite: 2, 59]. Fully conformant means that the content completely conforms to the accessibility standard without any known exceptions or barriers[cite: 2, 59].
-        </p>
+    <!-- Main Statement Body -->
+    <section aria-labelledby="conformance-heading">
+      <div class="container-narrow">
 
-        <h3>Technical Specifications &amp; Compatibility</h3>
-        <p>
-          Accessibility of this website relies on the following technologies to work with the particular combination of web browser and any assistive technologies or plugins installed on your computer[cite: 2, 59, 62]:
-        </p>
-        <ul>
-          <li>HTML5 (Semantic Landmarks &amp; Standard Controls)[cite: 59]</li>
-          <li>WAI-ARIA (Where semantic native HTML is insufficient)[cite: 59, 62]</li>
-          <li>CSS (High-contrast focus appearance, reflow up to 400%, flexible typography)</li>
-        </ul>
+        <article class="statement-card">
+          <h2 id="conformance-heading">Conformance Status</h2>
+          <p>
+            The <strong>Web Content Accessibility Guidelines (WCAG) 2.2 Level AA</strong> defines technical and design requirements for digital platforms.
+          </p>
+          <p>
+            This website is <strong>fully conformant with WCAG 2.2 Level AA</strong>. Full conformance means all content operates cleanly without known technical or interaction barriers across assistive technologies.
+          </p>
+        </article>
 
-        <h3>Testing &amp; Evaluation Approach</h3>
-        <p>
-          This website was built from the ground up using a clean, static HTML/CSS architecture[cite: 59]. It has been evaluated through manual technical testing and real assistive technology sweeps, including[cite: 2, 61, 62]:
-        </p>
-        <ul>
-          <li><strong>Keyboard-only navigation:</strong> Ensuring full logical focus order, visible focus rings (minimum 3:1 contrast), and zero focus traps[cite: 30, 59, 62].</li>
-          <li><strong>Screen Reader validation:</strong> Verified using VoiceOver (macOS/iOS) and NVDA (Windows) across structural landmarks, headings, and interactive elements[cite: 2, 61, 62].</li>
-          <li><strong>Screen Magnification &amp; Reflow:</strong> Tested up to 400% zoom with no horizontal scrolling or content overlap[cite: 30, 62].</li>
-          <li><strong>Voice Control:</strong> Verified that visible link and control labels match accessible names for hands-free operation[cite: 30, 61, 62].</li>
-        </ul>
+        <article class="statement-card">
+          <h3>Technical Architecture &amp; Compatibility</h3>
+          <p>
+            Our site relies on standard HTML5, CSS3, and ARIA attributes to ensure full compatibility with modern web browsers and assistive tools:
+          </p>
+          <ul>
+            <li><strong>Semantic HTML:</strong> Native landmarks (&lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, and &lt;footer&gt;) establish logical rotor navigation.</li>
+            <li><strong>Flexible Layouts:</strong> CSS Grid and Flexbox support reflow up to 400% zoom without horizontal scrolling.</li>
+            <li><strong>High-Contrast Focus:</strong> Focus indicators maintain a minimum 3:1 contrast ratio against background surfaces.</li>
+          </ul>
+        </article>
 
-        <h3>Feedback &amp; Contact Information</h3>
-        <p>
-          We welcome your feedback on the accessibility of the Source Accessibility website[cite: 2, 59]. Please let us know if you encounter accessibility barriers[cite: 2, 59]:
-        </p>
-        <ul>
-          <li><strong>Email:</strong> <a href="mailto:marie@sourceaccessibility.co.uk">marie@sourceaccessibility.co.uk</a>[cite: 2, 59]</li>
-          <li><strong>Direct Meeting Booking:</strong> <a href="https://calendar.app.google/KPZ3KQfgMN6p5B9H9" target="_blank" rel="noopener" class="pdf-link">
-            Schedule a 30-minute conversation
-            <span class="sr-only">(opens in a new tab)</span>
-            <svg class="external-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-              <polyline points="15 3 21 3 21 9"></polyline>
-              <line x1="10" y1="14" x2="21" y2="3"></line>
-            </svg>
-          </a>[cite: 59]</li>
-          <li><strong>Postal Address:</strong> 129 Cranston Road, London, SE23 2EZ, United Kingdom[cite: 2]</li>
-        </ul>
-        <p>We aim to respond to accessibility feedback within 2 business days[cite: 2, 59].</p>
+        <article class="statement-card">
+          <h3>Evaluation &amp; Verification Methodology</h3>
+          <p>
+            Accessibility on this site is verified through manual testing and assistive technology sweeps:
+          </p>
+          <ul>
+            <li><strong>Keyboard Navigation:</strong> Verified full keyboard operability, focus order, and skip links.</li>
+            <li><strong>Screen Readers:</strong> Tested with VoiceOver and NVDA across structural elements, interactive controls, and document links.</li>
+            <li><strong>Voice Control:</strong> Verified that visible link text matches programmatic accessible names for seamless voice targeting.</li>
+          </ul>
+        </article>
+
+        <article class="statement-card">
+          <h3>Feedback &amp; Contact Information</h3>
+          <p>
+            We welcome your feedback on the accessibility of this website. If you encounter any barriers or need information in an alternative format, please contact us:
+          </p>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:info@sourceaccessibility.co.uk" class="email-link">info@sourceaccessibility.co.uk</a></li>
+            <li><strong>Direct Calendar:</strong> <a href="https://calendar.app.google/KPZ3KQfgMN6p5B9H9" target="_blank" rel="noopener" class="pdf-link">
+              Book a 30-minute chat
+              <span class="sr-only">(opens in a new tab)</span>
+              <svg class="external-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a></li>
+          </ul>
+          <p>We aim to respond to accessibility inquiries within 2 business days.</p>
+        </article>
+
       </div>
     </section>
+
   </main>
 
-  <!-- Complete Standard Footer -->
-  <footer>
+  <!-- Global Footer -->
+  <footer class="site-footer">
     <div class="container footer-content">
-      <nav aria-label="Footer navigation">
+      <nav class="footer-nav" aria-label="Footer navigation">
         <ul class="footer-links">
+          <li><a href="#top">Back to top</a></li>
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="index.html#contact">Contact us</a></li>
           <li><a href="accessibility-statement.html" aria-current="page">Accessibility Statement</a></li>
+          <li>
+            <a href="https://calendar.app.google/KPZ3KQfgMN6p5B9H9" target="_blank" rel="noopener" class="pdf-link">
+              Book a 30 min chat
+              <span class="sr-only">(opens in a new tab)</span>
+              <svg class="external-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </li>
           <li>
             <a href="assets/docs/Cyber%20Security.pdf" target="_blank" rel="noopener" class="pdf-link">
               Cyber Security (PDF)
