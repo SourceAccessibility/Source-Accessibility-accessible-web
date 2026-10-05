@@ -16,25 +16,28 @@
   <!-- WCAG 2.4.1 Skip Link -->
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <header>
-    <div class="container header-top">
-      <div class="header-brand">
-        <a href="index.html" class="logo-link" aria-label="Source Accessibility homepage">
-          <img src="assets/img/SourceAccessibility Transp WebsiteBlue.png" alt="" class="header-logo">
-        </a>
-        <div class="brand-text">
-          <span class="site-name">Source Accessibility</span>
-          <span class="site-tagline">Accessibility shaped by lived experience</span>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-top">
+        <div class="header-brand">
+          <a class="header-logo-link" href="index.html" aria-label="Source Accessibility home">
+            <img class="header-logo" src="assets/img/SourceAccessibility Transp WebsiteBlue.png" alt="Source Accessibility logo">
+          </a>
+          <div class="brand-text">
+            <span class="site-name">Source Accessibility</span>
+            <span class="site-tagline">Inclusive digital accessibility, testing &amp; research</span>
+          </div>
         </div>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <ul class="nav-list">
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav aria-label="Primary navigation">
-        <ul class="nav-list">
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-      </nav>
     </div>
   </header>
 
@@ -43,23 +46,28 @@
     <!-- Hero / Intro -->
     <section class="hero" aria-labelledby="hero-heading">
       <div class="container">
-        <h1 id="hero-heading">Accessibility shaped by lived experience</h1>
+        <h1 id="hero-heading">Digital Accessibility shaped by lived experience</h1>
         <p class="hero-intro">
-          We help digital teams build accessible products through expert technical evaluation and authentic testing with real disabled and neurodivergent users.
+          We help digital teams build accessible products through expert technical evaluation and testing with our panel of disabled and neurodivergent users.
         </p>
         <p class="hero-support">
-          Our work combines deep accessibility expertise with real-world user testing to understand how digital services work in practice across screen readers, Voice Control, magnification, keyboard-only, and switch access.
+          Our work combines deep accessibility expertise with real-world user testing to understand how digital services work in practice across a range of access needs and assistive technologies — including screen readers, Voice Control, magnification, keyboard-only and switch access. We recognise that access needs can change too, shaped by people’s circumstances, environments and the way they interact with technology.
         </p>
-        <a href="#contact" class="button-primary">Talk to us about a project</a>
+        <p class="hero-support hero-result">
+          <strong>The result is a more complete picture of how your digital service works for the people who use it — and where it can work better.</strong>
+        </p>
+        <a href="#contact" class="button-primary hero-cta">Talk to us about a project</a>
       </div>
     </section>
 
     <!-- Services Grid (3x2 Layout) -->
     <section id="services" class="services-section" aria-labelledby="services-heading">
       <div class="container">
-        <h2 id="services-heading">Our Capabilities</h2>
+        <h2 id="services-heading">What we do</h2>
         <p class="section-intro">
-          Bespoke accessibility solutions combining technical WCAG 2.2 AA evaluation with authentic lived experience:
+          <strong>Not one-size-fits-all accessibility.</strong>
+          <br>
+          <strong>Bespoke accessibility solutions where technical expertise meets lived experience.</strong>
         </p>
 
         <div class="services-grid">
@@ -68,7 +76,7 @@
               <span class="badge-tag">Lived Experience</span>
             </a>
             <h3>Inclusive Research &amp; User Testing</h3>
-            <p>Task-based studies with disabled and neurodivergent participants using real assistive technologies to uncover genuine usability barriers across key digital journeys.</p>
+            <p>In-house studies with disabled and neurodivergent participants, using real assistive technologies to uncover genuine usability barriers across key digital journeys.</p>
           </article>
 
           <article class="service-card feature-promo-card">
@@ -76,7 +84,7 @@
               <span class="badge-tag">Technical Validation</span>
             </a>
             <h3>Assistive Technology Health Checks</h3>
-            <p>Rapid expert reviews across screen readers (VoiceOver, NVDA, JAWS), Voice Control, magnification, keyboard, and switch navigation to catch blockers early in sprint cycles.</p>
+            <p>Expert reviews across screen readers (VoiceOver, NVDA, JAWS), Voice Control, magnification, keyboard, and switch navigation to catch blockers and expose barriers and friction.</p>
           </article>
 
           <article class="service-card feature-promo-card">
@@ -92,7 +100,7 @@
               <span class="badge-tag">Vendor Assurance</span>
             </a>
             <h3>Strategic Procurement &amp; Vendor Testing</h3>
-            <p>Evaluating third-party software, white-label booking tools, and digital vendors before purchase to guarantee accessibility compliance before financial commitment.</p>
+            <p>Testing of third-party software, white-label solutions and digital vendors using real assistive technologies and disabled testers — giving you an honest view of accessibility, usability and the wider user experience before you commit.</p>
           </article>
 
           <article class="service-card feature-promo-card">
@@ -100,7 +108,7 @@
               <span class="badge-tag">Conversion &amp; Opportunity</span>
             </a>
             <h3>Granular Journey Discovery &amp; Moderated Research</h3>
-            <p>Driven by product discovery and careful planning, our experienced moderators evaluate broader user journeys at a granular level to uncover friction, workarounds, and points of exclusion.</p>
+            <p>Exploring digital journeys in depth through carefully planned, moderated research to uncover friction, workarounds and points of exclusion — revealing opportunities to improve the experience for everyone.</p>
           </article>
 
           <article class="service-card feature-promo-card">
@@ -206,7 +214,7 @@
             </iframe>
           </div>
           <div class="video-caption">
-            <h3>Screen Reader Journey Evaluation with Adi Latif</h3>
+            <h3>Screen Reader Journey with Adi Latif X Source Accessibility</h3>
             <p>
               Adi Latif, a blind screen reader user and experienced accessibility tester, demonstrates how iPhone VoiceOver shapes the experience of planning a journey to the Tower of London.
             </p>

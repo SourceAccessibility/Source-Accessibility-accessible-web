@@ -183,6 +183,14 @@ p { max-width: 65ch; }
   line-height: 1.65;
 }
 
+.hero-result {
+  margin-top: 1rem;
+}
+
+.hero-cta {
+  margin-top: 1.5rem;
+}
+
 /* Main Content Section Banding */
 main section {
   width: 100%;
