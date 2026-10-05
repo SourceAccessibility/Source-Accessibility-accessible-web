@@ -261,6 +261,95 @@ main section.hero {
   color: var(--text-main);
 }
 
+.video-card {
+  background: var(--panel-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.video-aspect-ratio {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video-aspect-ratio iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-caption {
+  padding: 1.5rem;
+}
+
+.video-intro {
+  max-width: 65ch;
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 1.2rem;
+  line-height: 1.65;
+}
+
+.video-caption h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--text-main);
+}
+
+.video-caption h4 {
+  margin: 1.5rem 0 0.5rem;
+  color: var(--brand-primary);
+  font-size: 1.1rem;
+}
+
+.video-caption p {
+  color: var(--text-muted);
+  margin: 0 0 1rem;
+  line-height: 1.65;
+}
+
+.video-caption .video-list-heading {
+  margin-top: 1.25rem;
+}
+
+.video-caption ul {
+  margin: 0 0 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.video-caption li {
+  margin-bottom: 0.75rem;
+  padding-left: 0.25rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.video-caption li strong {
+  color: var(--text-main);
+}
+
+.video-caption .video-closing {
+  margin: 1.5rem 0 0;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-main);
+  font-weight: 700;
+}
+
+.screen-reader-enquiry {
+  max-width: 100%;
+  margin-top: 1.5rem;
+  text-align: center;
+  white-space: normal;
+}
+
 /* Buttons (WCAG 2.5.8 Touch Target Minimum 44x44px) */
 .button-primary {
   display: inline-flex;
