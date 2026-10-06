@@ -1,38 +1,3 @@
-document.querySelectorAll(".nav-services").forEach((servicesItem) => {
-  const toggle = servicesItem.querySelector(".nav-services-toggle");
-  const menu = servicesItem.querySelector(".services-menu");
-
-  if (!toggle || !menu) {
-    return;
-  }
-
-  const closeMenu = () => {
-    toggle.setAttribute("aria-expanded", "false");
-    menu.hidden = true;
-  };
-
-  toggle.addEventListener("click", () => {
-    const isExpanded = toggle.getAttribute("aria-expanded") === "true";
-    toggle.setAttribute("aria-expanded", String(!isExpanded));
-    menu.hidden = isExpanded;
-  });
-
-  servicesItem.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") {
-      closeMenu();
-      toggle.focus();
-    }
-  });
-
-  servicesItem.addEventListener("focusout", (event) => {
-    if (!servicesItem.contains(event.relatedTarget)) {
-      closeMenu();
-    }
-  });
-
-  menu.addEventListener("click", closeMenu);
-});
-
 const ensureHeadingIds = (documentToUpdate) => {
   const ids = new Set(
     [...documentToUpdate.querySelectorAll("[id]")].map((element) => element.id)
@@ -87,6 +52,8 @@ const searchablePages = [
   { path: "index.html", name: "Home" },
   { path: "services.html", name: "Services" },
   { path: "about.html", name: "About" },
+  { path: "video.html", name: "Video" },
+  { path: "contact.html", name: "Contact" },
   { path: "accessibility-statement.html", name: "Accessibility Statement" },
 ];
 
@@ -152,53 +119,24 @@ const findExcerpt = (text, query) => {
 };
 
 document.querySelectorAll(".header-search").forEach((searchItem) => {
-  const toggle = searchItem.querySelector(".header-search-toggle");
-  const panel = searchItem.querySelector(".header-search-panel");
   const form = searchItem.querySelector(".site-search-form");
   const input = searchItem.querySelector("#site-search-input");
+  const feedback = searchItem.querySelector(".search-feedback");
   const status = searchItem.querySelector(".search-status");
   const results = searchItem.querySelector(".search-results");
 
-  if (!(toggle instanceof HTMLButtonElement)
-    || !(panel instanceof HTMLElement)
-    || !(form instanceof HTMLFormElement)
+  if (!(form instanceof HTMLFormElement)
     || !(input instanceof HTMLInputElement)
+    || !(feedback instanceof HTMLElement)
     || !(status instanceof HTMLElement)
     || !(results instanceof HTMLOListElement)) {
     return;
   }
 
-  const closePanel = () => {
-    toggle.setAttribute("aria-expanded", "false");
-    panel.hidden = true;
-  };
-
-  toggle.addEventListener("click", () => {
-    const isExpanded = toggle.getAttribute("aria-expanded") === "true";
-    toggle.setAttribute("aria-expanded", String(!isExpanded));
-    panel.hidden = isExpanded;
-
-    if (!isExpanded) {
-      input.focus();
-    }
-  });
-
-  searchItem.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") {
-      closePanel();
-      toggle.focus();
-    }
-  });
-
-  results.addEventListener("click", (event) => {
-    if (event.target instanceof Element && event.target.closest("a")) {
-      closePanel();
-    }
-  });
-
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
     results.replaceChildren();
+    feedback.hidden = false;
     const query = input.value.trim().toLowerCase();
 
     if (!query) {
@@ -246,26 +184,6 @@ document.querySelectorAll(".header-search").forEach((searchItem) => {
     } catch (error) {
       console.error("Website search failed.", error);
       status.textContent = "Search is temporarily unavailable. Please try again later.";
-    }
-  });
-});
-
-document.addEventListener("click", (event) => {
-  if (!(event.target instanceof Element)) {
-    return;
-  }
-
-  document.querySelectorAll(".nav-services, .header-search").forEach((disclosure) => {
-    if (disclosure.contains(event.target)) {
-      return;
-    }
-
-    const toggle = disclosure.querySelector("button[aria-expanded]");
-    const content = disclosure.querySelector(".services-menu, .header-search-panel");
-
-    if (toggle && content) {
-      toggle.setAttribute("aria-expanded", "false");
-      content.hidden = true;
     }
   });
 });

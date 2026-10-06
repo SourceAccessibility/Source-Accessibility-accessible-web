@@ -28,31 +28,22 @@
         <nav class="main-nav" aria-label="Primary navigation">
           <ul class="nav-list">
             <li><a href="index.html">Home</a></li>
-            <li class="nav-services">
-              <button class="nav-services-toggle" type="button" aria-expanded="false" aria-controls="services-menu">Services</button>
-              <ul class="services-menu" id="services-menu" hidden>
-                <li><a href="services.html">All services</a></li>
-                <li><a href="services.html#inclusive-research">Inclusive Research &amp; User Testing</a></li>
-                <li><a href="services.html#at-testing">Assistive Technology Health Checks</a></li>
-                <li><a href="services.html#audits">Accessibility Audits &amp; Action Roadmaps</a></li>
-                <li><a href="services.html#granular-discovery">Granular Journey Discovery &amp; Moderated Research</a></li>
-                <li><a href="services.html#inclusive-design">Inclusive Design &amp; User-Centred Product Development</a></li>
-                <li><a href="services.html#procurement">Strategic Procurement &amp; Supplier Testing</a></li>
-                <li><a href="services.html#benchmarking">Accessibility Benchmarking &amp; Measurement</a></li>
-                <li><a href="services.html#capability-building">Accessibility Strategy, Training &amp; Mentoring</a></li>
-                <li><a href="services.html#ai-readiness">AI-Agent Readiness &amp; Human-Verified Assurance</a></li>
-              </ul>
-            </li>
+            <li><a href="services.html">Services</a></li>
             <li><a href="about.html" aria-current="page">About</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li class="header-search">
-              <button class="header-search-toggle" type="button" aria-expanded="false" aria-controls="site-search-panel">Search</button>
-              <div class="header-search-panel" id="site-search-panel" hidden>
-                <form class="site-search-form" role="search">
-                  <label class="sr-only" for="site-search-input">Search this website</label>
-                  <input id="site-search-input" name="q" type="search" autocomplete="off">
-                  <button class="button-primary" type="submit">Search</button>
-                </form>
+              <form class="site-search-form" role="search">
+                <label class="sr-only" for="site-search-input">Search this website</label>
+                <input id="site-search-input" name="q" type="search" placeholder="Search this website" autocomplete="off">
+                <button class="site-search-submit" type="submit" aria-label="Search">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="7"></circle>
+                    <line x1="16.65" y1="16.65" x2="21" y2="21"></line>
+                  </svg>
+                </button>
+              </form>
+              <div class="search-feedback" hidden>
                 <p class="search-status" role="status" aria-live="polite"></p>
                 <ol class="search-results"></ol>
               </div>
@@ -75,25 +66,6 @@
         <p class="hero-support">
           Founded on the principle that compliance alone does not guarantee usability, Source Accessibility connects technical WCAG 2.2 AA standards with real human interactions. We manage Skyscanner's Disabled Tester Panel (DTP), helping high-traffic digital services surface critical blockers and translate research into measurable product improvements.
         </p>
-      </div>
-    </section>
-
-    <section class="founder-bio-section" aria-labelledby="founder-bio-heading">
-      <div class="container">
-        <article class="statement-card founder-bio-card">
-          <h2 id="founder-bio-heading">The experience behind the approach</h2>
-          <h3>Marie Taylor <span>Founder</span></h3>
-          <p>I founded Source Accessibility after an unusual career journey spanning sound engineering, technical quality assurance and archiving in broadcast television and radio, including the BBC and Channel 4. Alongside that, I ran a bespoke tailoring studio because I love clothes, craftsmanship and detail.</p>
-          <p>Naturally, my next career move was software development. It seemed to tick the boxes</p>
-          <p>My pivot into accessibility arose not from my training, but from a 'dev' job interview where I was presented with an accessibility question and drew a total blank. I recognised a serious gap in my formal training, and I couldn’t believe the scale of it.</p>
-          <p>More importantly, I had found something I wanted to understand properly. It was immediately clear that accessibility brought together so much of what I enjoy: technology, problem-solving, research, people and the opportunity to make things genuinely better. And, perhaps unsurprisingly, I found myself rather well suited to it. No tailoring pun intended.</p>
-          <p>I sought out a mentor, developed my expertise in quality engineering and UX research, and immersed myself in accessibility. I care deeply about this work. Seeing the impact that good accessibility can have, and having the opportunity to help others create better experiences, is a huge driving force for me.</p>
-          <p>Source Accessibility is the culmination of those different strands of experience. The more I learn about accessibility, technology and user experience, the more opportunities I see to make digital experiences work better, and to communicate what needs to change in ways that help people act.</p>
-          <p>Ultimately, I care about doing things well. I have seen first-hand how disabling and limiting poor digital experiences can be, and how much they can restrict people’s independence and digital freedom. I also see how much better those experiences can be with the right direction.</p>
-          <p>That is how I see my role: not simply finding problems, but being in your corner and helping you work out what better looks like, how to get there, and how to make it stick.</p>
-          <p>And I feel very lucky to have met some stellar people along the way, and to have incredible partners and disabled testers in my corner.</p>
-          <p>I’m in your corner too.</p>
-        </article>
       </div>
     </section>
 
@@ -127,20 +99,107 @@
       </div>
     </section>
 
-    <!-- Proven Impact -->
-    <section aria-labelledby="impact-heading">
+    <section class="trusted-by" id="trusted-by" aria-labelledby="trusted-heading">
       <div class="container">
-        <h2 id="impact-heading">Impact across complex digital products</h2>
+        <h2 id="trusted-heading">Trusted by digital &amp; accessibility leaders</h2>
+        <p class="section-intro">
+          Here is what accessibility leaders, engineering coaches, and institutional partners say about working with Source Accessibility:
+        </p>
+
+        <ul class="testimonial-stacked-list">
+          <li>
+            <article class="testimonial-card horizontal">
+              <div class="testimonial-left">
+                <p class="testimonial-quote">
+                  "Source Accessibility provides invaluable accessibility consultancy to Skyscanner, supporting us primarily with inclusive user testing. Her technical background and genuine passion for accessibility makes a real impact on how we design and build for disabled users."
+                </p>
+              </div>
+              <div class="testimonial-right">
+                <img src="assets/img/Skyscanner_Logo_LockupVertical_SkyBlue_RGB.png" alt="Skyscanner logo" class="testimonial-logo tall-logo">
+                <p class="testimonial-name">Heather Hepburn</p>
+                <p class="testimonial-role">Head of Accessibility, Skyscanner</p>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="testimonial-card horizontal">
+              <div class="testimonial-left">
+                <p class="testimonial-quote">
+                  "Source Accessibility helped us review accessibility across our rebranded website and gave clear, practical recommendations to improve the experience for all users."
+                </p>
+              </div>
+              <div class="testimonial-right">
+                <img src="assets/img/makers-logo.png" alt="Makers Academy logo" class="testimonial-logo soft-bg">
+                <p class="testimonial-name">Neil Studd</p>
+                <p class="testimonial-role">Software Engineering Coach, Makers</p>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="testimonial-card horizontal">
+              <div class="testimonial-left">
+                <p class="testimonial-quote">
+                  "Source Accessibility supported us with an accessibility audit and implementation guidance, helping to improve the usability of our website for a wider audience."
+                </p>
+              </div>
+              <div class="testimonial-right">
+                <img src="assets/img/trefoil-house-logo.png" alt="Trefoil Trust logo" class="testimonial-logo soft-bg">
+                <p class="testimonial-name">Dennis Trueland</p>
+                <p class="testimonial-role">Chair of Trustees, Trefoil Trust</p>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="testimonial-card horizontal">
+              <div class="testimonial-left">
+                <p class="testimonial-quote">
+                  "As Industrial Liaison for the School of Computer Science at the University of St Andrews, I am used to collaborating with external organisations. However, it is rare to come across someone who makes the experience as straightforward and joyful as Marie. Source Accessibility played a key intermediary role in our collaboration with Skyscanner, creating accessibility documentation and facilitating lived-experience demos. Marie's practical guidance and expertise made a real impact on how our students incorporate accessibility into their professional practice."
+                </p>
+              </div>
+              <div class="testimonial-right">
+                <img src="assets/img/01-foundation-black-text.png" alt="University of St Andrews logo" class="testimonial-logo tall-logo soft-bg">
+                <p class="testimonial-name">Dr Kirsty Ross</p>
+                <p class="testimonial-role">Industrial Liaison Officer, University of St Andrews</p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="trust-section" aria-labelledby="trust-heading">
+      <div class="container">
+        <h2 id="trust-heading">Important to you, important to us</h2>
         <p>
-          Our evidence-led approach supports leading travel platforms, charities, and educational institutions:
+          Source Accessibility regularly works with sensitive information, including disability-related details that are treated as special category data under UK GDPR.
         </p>
         <ul>
-          <li><strong>Skyscanner:</strong> Managing the Disabled Tester Panel (DTP) to evaluate core flight, hotel, and booking provider flows across web and mobile platforms.</li>
-          <li><strong>Trefoil Trust:</strong> Conducting independent accessibility audits to remove grant application barriers for parents of disabled children.</li>
-          <li><strong>University of St Andrews:</strong> Facilitating lived-experience sessions and bringing accessible development principles into the Computer Science curriculum.</li>
+          <li><strong>Data protection &amp; GDPR:</strong> We minimise data, store it securely, and only use it for agreed research and testing purposes.</li>
+          <li><strong>Security:</strong> Ways of working are aligned with Cyber Essentials good practice to protect client and participant data.</li>
+          <li><strong>Professional standards:</strong> Led by an IAAP member with appropriate professional indemnity (£5m) and public liability (£2m) cover for consultancy and research work.</li>
+          <li><strong>Sustainability:</strong> Remote-first by default, reducing travel while still enabling meaningful participation from diverse disabled users.</li>
         </ul>
-        <p style="margin-top: 2rem;">
-          <a href="index.html#contact" class="button-primary">Talk to us about a project</a>
+        <p class="trust-links">
+          Review our
+          <a href="assets/docs/Cyber%20Security.pdf" target="_blank" rel="noopener" class="pdf-link">
+            Cyber Essentials Certification (PDF)
+            <span class="sr-only">(opens in a new tab)</span>
+            <svg class="external-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+          and
+          <a href="assets/docs/carbon-reduction-plan.pdf" target="_blank" rel="noopener" class="pdf-link">
+            Carbon Reduction Plan (PDF)
+            <span class="sr-only">(opens in a new tab)</span>
+            <svg class="external-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>.
         </p>
       </div>
     </section>
@@ -154,7 +213,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="about.html" aria-current="page">About</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
           <li><a href="accessibility-statement.html">Accessibility Statement</a></li>
           <li>
             <a href="assets/docs/Cyber%20Security.pdf" target="_blank" rel="noopener" class="pdf-link">

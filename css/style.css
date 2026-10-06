@@ -133,61 +133,70 @@ header {
   align-items: center;
 }
 
-.nav-services {
-  position: relative;
-}
-
-.nav-services-toggle {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  padding: 0;
-  border: 0;
-  background: transparent;
-  color: var(--text-main);
-  font: inherit;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.nav-services-toggle:hover,
-.nav-services-toggle:focus-visible {
-  color: var(--brand-primary);
+.nav-list a:hover,
+.nav-list a:focus-visible {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.3em;
 }
 
 .header-search {
   position: relative;
 }
 
-.header-search-toggle {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  padding: 0;
-  border: 0;
-  background: transparent;
-  color: var(--text-main);
-  font: inherit;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.header-search-toggle:hover,
-.header-search-toggle:focus-visible {
-  color: var(--brand-primary);
-}
-
-.nav-list a[aria-current="page"],
-.nav-services-toggle[aria-current="page"] {
+.nav-list a[aria-current="page"] {
   border-bottom: 2px solid var(--brand-primary);
 }
 
-.header-search-panel,
-.header-search-panel[hidden] {
+.site-search-form {
+  display: flex;
+  align-items: stretch;
+  gap: 0.35rem;
+}
+
+.site-search-form input {
+  width: 12rem;
+  min-width: 0;
+  min-height: 44px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.35rem;
+  background: var(--bg-body);
+  color: var(--text-main);
+  font: inherit;
+  font-size: 1rem;
+}
+
+.site-search-form input::placeholder {
+  color: var(--text-muted);
+  opacity: 1;
+}
+
+.site-search-submit {
+  display: inline-flex;
+  flex: 0 0 44px;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0;
+  border: 1px solid var(--brand-primary);
+  border-radius: 0.35rem;
+  background: var(--brand-primary);
+  color: var(--bg-body);
+  cursor: pointer;
+}
+
+.site-search-submit:hover,
+.site-search-submit:focus-visible {
+  background: var(--brand-focus);
+  border-color: var(--brand-focus);
+}
+
+.search-feedback[hidden] {
   display: none;
 }
 
-.header-search-panel:not([hidden]) {
+.search-feedback:not([hidden]) {
   position: absolute;
   z-index: 20;
   top: calc(100% + 0.5rem);
@@ -199,21 +208,6 @@ header {
   border: 1px solid var(--border-color);
   border-radius: 0.5rem;
   box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 30%);
-}
-
-.site-search-form {
-  display: flex;
-  align-items: stretch;
-  gap: 0.5rem;
-}
-
-.site-search-form input {
-  min-width: 0;
-  flex: 1;
-}
-
-.site-search-form .button-primary {
-  flex: 0 0 auto;
 }
 
 .search-status {
@@ -249,46 +243,6 @@ header {
   margin: 0.25rem 0 0;
   color: var(--text-muted);
   font-size: 0.9rem;
-}
-
-.services-menu,
-.services-menu[hidden] {
-  display: none;
-}
-
-.services-menu:not([hidden]) {
-  position: absolute;
-  z-index: 10;
-  top: 100%;
-  right: 0;
-  display: block;
-  width: max-content;
-  min-width: 18rem;
-  max-width: min(26rem, calc(100vw - 2rem));
-  max-height: min(70vh, 34rem);
-  overflow-y: auto;
-  margin: 0;
-  padding: 0.5rem;
-  list-style: none;
-  background: var(--panel-surface);
-  border: 1px solid var(--border-color);
-  border-radius: 0.5rem;
-  box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 30%);
-}
-
-.services-menu a {
-  display: block;
-  min-height: 44px;
-  padding: 0.65rem 0.75rem;
-  border-radius: 0.25rem;
-  color: var(--text-main);
-  text-decoration: none;
-}
-
-.services-menu a:hover,
-.services-menu a:focus-visible {
-  background: var(--bg-body);
-  color: var(--brand-primary);
 }
 
 @media (min-width: 1000px) {
@@ -415,19 +369,16 @@ main section.hero {
   background-color: var(--bg-alt);
 }
 
+main section.hero + section {
+  padding-top: 2rem;
+}
+
+main section.home-hero + section.services-section {
+  padding-top: 0;
+}
+
 main section.threads-section {
   padding-top: 2.5rem;
-}
-
-main section.founder-bio-section {
-  padding: 2.5rem 0;
-}
-
-.founder-bio-card h3 span {
-  margin-left: 0.5rem;
-  color: var(--text-muted);
-  font-size: 0.8em;
-  font-weight: 500;
 }
 
 /* Statement / Legal Panels */
@@ -529,16 +480,16 @@ main section.founder-bio-section {
   line-height: 1.65;
 }
 
-.video-caption h3 {
+.video-caption h2 {
   margin-top: 0;
   margin-bottom: 1rem;
   color: var(--text-main);
 }
 
-.video-caption h4 {
-  margin: 1.5rem 0 0.5rem;
+.video-caption h3 {
+  margin: 1.5rem 0 2.5rem;
   color: var(--brand-primary);
-  font-size: 1.1rem;
+  font-size: 1.4rem;
 }
 
 .video-caption p {
@@ -1032,11 +983,6 @@ footer {
 
 /* Responsive Behavior for Tablets & Mobile Screens */
 @media (max-width: 800px) {
-  .services-menu:not([hidden]) {
-    right: auto;
-    left: 0;
-  }
-
   .services-page .service-card {
     grid-template-columns: minmax(0, 1fr);
     gap: 1.5rem;

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Source Accessibility</title>
+  <meta name="description" content="Contact Source Accessibility to discuss your digital accessibility, research or testing needs.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-top">
+        <div class="header-brand">
+          <a class="header-logo-link" href="index.html" aria-label="Source Accessibility home">
+            <img class="header-logo" src="assets/img/SourceAccessibility Transp WebsiteBlue.png" alt="Source Accessibility logo">
+          </a>
+          <div class="brand-text">
+            <span class="site-name">Source Accessibility</span>
+            <span class="site-tagline">Inclusive digital accessibility, testing &amp; research</span>
+          </div>
+        </div>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+            <li class="header-search">
+              <form class="site-search-form" role="search">
+                <label class="sr-only" for="site-search-input">Search this website</label>
+                <input id="site-search-input" name="q" type="search" placeholder="Search this website" autocomplete="off">
+                <button class="site-search-submit" type="submit" aria-label="Search">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="7"></circle>
+                    <line x1="16.65" y1="16.65" x2="21" y2="21"></line>
+                  </svg>
+                </button>
+              </form>
+              <div class="search-feedback" hidden>
+                <p class="search-status" role="status" aria-live="polite"></p>
+                <ol class="search-results"></ol>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="contact-heading">
+      <div class="container">
+        <h1 id="contact-heading">Let’s talk about your product</h1>
+        <p class="hero-intro">
+          Whether you are starting a new build or improving an existing service, we are happy to have a short, no-pressure conversation.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-section" aria-label="Contact options">
+      <div class="container">
+        <div class="contact-options">
+          <div class="contact-card">
+            <h2>Direct Email</h2>
+            <p>Reach out directly to discuss project context, timelines, or testing proposals:</p>
+            <p>
+              <a href="mailto:info@sourceaccessibility.co.uk" class="contact-link">
+                info@sourceaccessibility.co.uk
+              </a>
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <h2>Schedule a Call</h2>
+            <p>Book a 30-minute introductory conversation directly on our calendar:</p>
+            <p>
+              <a href="https://calendar.app.google/KPZ3KQfgMN6p5B9H9" target="_blank" rel="noopener" class="button-primary">
+                Book a 30-minute chat
+                <span class="sr-only">(opens in a new tab)</span>
+                <svg class="external-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1-2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="#top">Back to top</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+          <li><a href="accessibility-statement.html">Accessibility Statement</a></li>
+          <li>
+            <a href="assets/docs/Cyber%20Security.pdf" target="_blank" rel="noopener" class="pdf-link">
+              Cyber Security (PDF)
+              <span class="sr-only">(opens in a new tab)</span>
+            </a>
+          </li>
+          <li>
+            <a href="assets/docs/carbon-reduction-plan.pdf" target="_blank" rel="noopener" class="pdf-link">
+              Carbon Reduction Plan (PDF)
+              <span class="sr-only">(opens in a new tab)</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <p class="copyright">&copy; 2026 Source Accessibility Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
