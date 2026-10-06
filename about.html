@@ -45,6 +45,18 @@
             </li>
             <li><a href="about.html" aria-current="page">About</a></li>
             <li><a href="index.html#contact">Contact</a></li>
+            <li class="header-search">
+              <button class="header-search-toggle" type="button" aria-expanded="false" aria-controls="site-search-panel">Search</button>
+              <div class="header-search-panel" id="site-search-panel" hidden>
+                <form class="site-search-form" role="search">
+                  <label class="sr-only" for="site-search-input">Search this website</label>
+                  <input id="site-search-input" name="q" type="search" autocomplete="off">
+                  <button class="button-primary" type="submit">Search</button>
+                </form>
+                <p class="search-status" role="status" aria-live="polite"></p>
+                <ol class="search-results"></ol>
+              </div>
+            </li>
           </ul>
         </nav>
       </div>
@@ -66,8 +78,27 @@
       </div>
     </section>
 
+    <section class="founder-bio-section" aria-labelledby="founder-bio-heading">
+      <div class="container">
+        <article class="statement-card founder-bio-card">
+          <h2 id="founder-bio-heading">The experience behind the approach</h2>
+          <h3>Marie Taylor <span>Founder</span></h3>
+          <p>I founded Source Accessibility after an unusual career journey spanning sound engineering, technical quality assurance and archiving in broadcast television and radio, including the BBC and Channel 4. Alongside that, I ran a bespoke tailoring studio because I love clothes, craftsmanship and detail.</p>
+          <p>Naturally, my next career move was software development. It seemed to tick the boxes</p>
+          <p>My pivot into accessibility arose not from my training, but from a 'dev' job interview where I was presented with an accessibility question and drew a total blank. I recognised a serious gap in my formal training, and I couldn’t believe the scale of it.</p>
+          <p>More importantly, I had found something I wanted to understand properly. It was immediately clear that accessibility brought together so much of what I enjoy: technology, problem-solving, research, people and the opportunity to make things genuinely better. And, perhaps unsurprisingly, I found myself rather well suited to it. No tailoring pun intended.</p>
+          <p>I sought out a mentor, developed my expertise in quality engineering and UX research, and immersed myself in accessibility. I care deeply about this work. Seeing the impact that good accessibility can have, and having the opportunity to help others create better experiences, is a huge driving force for me.</p>
+          <p>Source Accessibility is the culmination of those different strands of experience. The more I learn about accessibility, technology and user experience, the more opportunities I see to make digital experiences work better, and to communicate what needs to change in ways that help people act.</p>
+          <p>Ultimately, I care about doing things well. I have seen first-hand how disabling and limiting poor digital experiences can be, and how much they can restrict people’s independence and digital freedom. I also see how much better those experiences can be with the right direction.</p>
+          <p>That is how I see my role: not simply finding problems, but being in your corner and helping you work out what better looks like, how to get there, and how to make it stick.</p>
+          <p>And I feel very lucky to have met some stellar people along the way, and to have incredible partners and disabled testers in my corner.</p>
+          <p>I’m in your corner too.</p>
+        </article>
+      </div>
+    </section>
+
     <!-- Four Core Threads (Structured 2x2 Layout) -->
-    <section aria-labelledby="threads-heading">
+    <section class="threads-section" aria-labelledby="threads-heading">
       <div class="container">
         <h2 id="threads-heading">Four threads that run through our work</h2>
         <p>However you work with Source Accessibility, these four core principles unite lived experience with practical delivery:</p>

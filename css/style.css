@@ -155,9 +155,100 @@ header {
   color: var(--brand-primary);
 }
 
+.header-search {
+  position: relative;
+}
+
+.header-search-toggle {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--text-main);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.header-search-toggle:hover,
+.header-search-toggle:focus-visible {
+  color: var(--brand-primary);
+}
+
 .nav-list a[aria-current="page"],
 .nav-services-toggle[aria-current="page"] {
   border-bottom: 2px solid var(--brand-primary);
+}
+
+.header-search-panel,
+.header-search-panel[hidden] {
+  display: none;
+}
+
+.header-search-panel:not([hidden]) {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  display: block;
+  width: min(28rem, calc(100vw - 2rem));
+  padding: 1rem;
+  background: var(--panel-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 30%);
+}
+
+.site-search-form {
+  display: flex;
+  align-items: stretch;
+  gap: 0.5rem;
+}
+
+.site-search-form input {
+  min-width: 0;
+  flex: 1;
+}
+
+.site-search-form .button-primary {
+  flex: 0 0 auto;
+}
+
+.search-status {
+  margin: 0.75rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.search-results {
+  max-height: min(55vh, 24rem);
+  overflow-y: auto;
+  margin: 0.5rem 0 0;
+  padding-left: 1.5rem;
+}
+
+.search-results:empty,
+.search-status:empty {
+  display: none;
+}
+
+.search-results li {
+  padding: 0.4rem 0;
+}
+
+.search-results a {
+  color: var(--brand-primary);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.search-results p {
+  margin: 0.25rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
 }
 
 .services-menu,
@@ -268,6 +359,11 @@ p { max-width: 65ch; }
   margin-top: 1rem;
 }
 
+.home-hero .hero-emphasis {
+  margin-top: 1rem;
+  color: var(--text-main);
+}
+
 .hero-cta {
   margin-top: 1.5rem;
 }
@@ -317,6 +413,21 @@ main section:nth-child(even) {
 
 main section.hero {
   background-color: var(--bg-alt);
+}
+
+main section.threads-section {
+  padding-top: 2.5rem;
+}
+
+main section.founder-bio-section {
+  padding: 2.5rem 0;
+}
+
+.founder-bio-card h3 span {
+  margin-left: 0.5rem;
+  color: var(--text-muted);
+  font-size: 0.8em;
+  font-weight: 500;
 }
 
 /* Statement / Legal Panels */
@@ -687,6 +798,15 @@ input, textarea {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
+  }
+
+  .main-nav {
+    width: 100%;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
   }
 
   .header-logo {

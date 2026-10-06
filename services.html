@@ -46,6 +46,18 @@
             </li>
             <li><a href="about.html">About</a></li>
             <li><a href="index.html#contact">Contact</a></li>
+            <li class="header-search">
+              <button class="header-search-toggle" type="button" aria-expanded="false" aria-controls="site-search-panel">Search</button>
+              <div class="header-search-panel" id="site-search-panel" hidden>
+                <form class="site-search-form" role="search">
+                  <label class="sr-only" for="site-search-input">Search this website</label>
+                  <input id="site-search-input" name="q" type="search" autocomplete="off">
+                  <button class="button-primary" type="submit">Search</button>
+                </form>
+                <p class="search-status" role="status" aria-live="polite"></p>
+                <ol class="search-results"></ol>
+              </div>
+            </li>
           </ul>
         </nav>
       </div>

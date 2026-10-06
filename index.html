@@ -50,6 +50,18 @@
             </li>
             <li><a href="about.html">About</a></li>
             <li><a href="index.html#contact">Contact</a></li>
+            <li class="header-search">
+              <button class="header-search-toggle" type="button" aria-expanded="false" aria-controls="site-search-panel">Search</button>
+              <div class="header-search-panel" id="site-search-panel" hidden>
+                <form class="site-search-form" role="search">
+                  <label class="sr-only" for="site-search-input">Search this website</label>
+                  <input id="site-search-input" name="q" type="search" autocomplete="off">
+                  <button class="button-primary" type="submit">Search</button>
+                </form>
+                <p class="search-status" role="status" aria-live="polite"></p>
+                <ol class="search-results"></ol>
+              </div>
+            </li>
           </ul>
         </nav>
       </div>
@@ -60,13 +72,16 @@
     
     <!-- Hero / Intro -->
     <section class="hero home-hero" aria-labelledby="hero-heading">
-      <div class="container-narrow">
+      <div class="container">
         <h1 id="hero-heading"><span>Digital Accessibility</span> <span>shaped by lived experience</span></h1>
         <p class="hero-intro">
           We help digital teams build accessible products through expert technical evaluation and testing with our panel of disabled and neurodivergent users.
         </p>
+        <p class="hero-support hero-emphasis">
+          <strong>Expert evaluation. Human evidence. Actionable proof.</strong>
+        </p>
         <p class="hero-support">
-          Our work combines deep accessibility expertise with real-world user testing to understand how digital services work in practice — bringing together technical accessibility and lived experience to identify what works, what creates friction and where things can work better.
+          We combine accessibility expertise, real assistive technology testing and lived-experience research to understand how digital services work in practice, identifying what works, what creates friction and where things can work better.
         </p>
         <a href="#contact" class="button-primary hero-cta">Talk to us about your project</a>
       </div>
@@ -99,11 +114,6 @@
             </a>
             <h3>Assistive Technology Health Checks</h3>
             <p><em>Expert testing with screen readers including VoiceOver, NVDA and JAWS, alongside Voice Control, magnification, keyboard and switch access. Designed to identify accessibility blockers early and validate how experiences work in practice.</em></p>
-            <details class="service-card-read-more">
-              <summary><strong>See how experiences work in practice.</strong> <span>Read more</span></summary>
-              <p>Hands-on testing across assistive technologies explores how people access, navigate and interact with digital experiences — identifying compatibility issues, friction and barriers that automated checks or single-technology testing can miss.</p>
-              <p><strong>Testing is performed in-house, with the option to validate findings with disabled users where real-world user verification is needed. Scope can be shaped around your priorities and timelines, from rapid manual checks to more in-depth assessment. Findings are presented in a clear, focused format, with the technical detail needed for remediation alongside concise insight to support product decisions and wider accessibility understanding.</strong></p>
-            </details>
           </article>
 
           <article class="service-card feature-promo-card">
@@ -215,7 +225,7 @@
     </section>
 
     <section class="demo-showcase" aria-labelledby="demo-heading">
-      <div class="container-narrow">
+      <div class="container">
         <h2 id="demo-heading">Lived Experience in Action</h2>
         <p class="video-intro">
           See digital accessibility through the eyes of a blind screen reader user. Real assistive technology testing reveals usability barriers, navigation issues and accessibility gaps that automated testing can miss.
