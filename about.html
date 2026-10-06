@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js" defer></script>
 </head>
-<body>
+<body id="top" class="about-page">
 
   <!-- WCAG 2.4.1 Skip Link -->
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -32,22 +32,6 @@
             <li><a href="about.html" aria-current="page">About</a></li>
             <li><a href="video.html">Video</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li class="header-search">
-              <form class="site-search-form" role="search">
-                <label class="sr-only" for="site-search-input">Search this website</label>
-                <input id="site-search-input" name="q" type="search" placeholder="Search this website" autocomplete="off">
-                <button class="site-search-submit" type="submit" aria-label="Search">
-                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="11" cy="11" r="7"></circle>
-                    <line x1="16.65" y1="16.65" x2="21" y2="21"></line>
-                  </svg>
-                </button>
-              </form>
-              <div class="search-feedback" hidden>
-                <p class="search-status" role="status" aria-live="polite"></p>
-                <ol class="search-results"></ol>
-              </div>
-            </li>
           </ul>
         </nav>
       </div>
@@ -64,7 +48,7 @@
           We bridge authentic disabled-user testing with clear, ticket-ready engineering roadmaps.
         </p>
         <p class="hero-support">
-          Founded on the principle that compliance alone does not guarantee usability, Source Accessibility connects technical WCAG 2.2 AA standards with real human interactions. We manage Skyscanner's Disabled Tester Panel (DTP), helping high-traffic digital services surface critical blockers and translate research into measurable product improvements.
+          Founded on the principle that compliance alone does not guarantee usability, Source Accessibility brings together WCAG 2.2 AA expertise, real assistive technology testing and lived-experience research to understand how digital products work for people in practice and turn that evidence into practical, measurable improvements.
         </p>
       </div>
     </section>
@@ -170,15 +154,7 @@
     <section class="trust-section" aria-labelledby="trust-heading">
       <div class="container">
         <h2 id="trust-heading">Important to you, important to us</h2>
-        <p>
-          Source Accessibility regularly works with sensitive information, including disability-related details that are treated as special category data under UK GDPR.
-        </p>
-        <ul>
-          <li><strong>Data protection &amp; GDPR:</strong> We minimise data, store it securely, and only use it for agreed research and testing purposes.</li>
-          <li><strong>Security:</strong> Ways of working are aligned with Cyber Essentials good practice to protect client and participant data.</li>
-          <li><strong>Professional standards:</strong> Led by an IAAP member with appropriate professional indemnity (£5m) and public liability (£2m) cover for consultancy and research work.</li>
-          <li><strong>Sustainability:</strong> Remote-first by default, reducing travel while still enabling meaningful participation from diverse disabled users.</li>
-        </ul>
+        <p>Read about our approach to privacy, security, professional standards and sustainability on our <a class="text-link" href="privacy.html">Privacy &amp; Data Protection</a> page.</p>
         <p class="trust-links">
           Review our
           <a href="assets/docs/Cyber%20Security.pdf" target="_blank" rel="noopener" class="pdf-link">
@@ -206,37 +182,22 @@
 
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="container footer-content">
-      <nav aria-label="Footer navigation">
+      <nav class="footer-nav" aria-label="Footer navigation">
         <ul class="footer-links">
+          <li><a class="history-back-link" href="index.html">Back</a></li>
+          <li><a href="#top">Back to top</a></li>
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="video.html">Video</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="accessibility-statement.html">Accessibility Statement</a></li>
-          <li>
-            <a href="assets/docs/Cyber%20Security.pdf" target="_blank" rel="noopener" class="pdf-link">
-              Cyber Security (PDF)
-              <span class="sr-only">(opens in a new tab)</span>
-              <svg class="external-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="assets/docs/carbon-reduction-plan.pdf" target="_blank" rel="noopener" class="pdf-link">
-              Carbon Reduction Plan (PDF)
-              <span class="sr-only">(opens in a new tab)</span>
-              <svg class="external-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
-            </a>
-          </li>
+          <li><a href="privacy.html">Privacy &amp; Data Protection</a></li>
+          <li><a href="https://calendar.app.google/KPZ3KQfgMN6p5B9H9" target="_blank" rel="noopener" class="pdf-link">Book a 30-minute chat <span class="sr-only">(opens in a new tab)</span></a></li>
+          <li><a href="assets/docs/Cyber%20Security.pdf" target="_blank" rel="noopener" class="pdf-link">Cyber Essentials Certification (PDF) <span class="sr-only">(opens in a new tab)</span></a></li>
+          <li><a href="assets/docs/carbon-reduction-plan.pdf" target="_blank" rel="noopener" class="pdf-link">Carbon Reduction Plan (PDF) <span class="sr-only">(opens in a new tab)</span></a></li>
         </ul>
       </nav>
       <p class="copyright">&copy; 2026 Source Accessibility Ltd. All rights reserved.</p>
