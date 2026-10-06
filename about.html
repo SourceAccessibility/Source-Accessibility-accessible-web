@@ -6,31 +6,48 @@
   <title>About Us | Source Accessibility</title>
   <meta name="description" content="Learn how Source Accessibility bridges authentic lived-experience user testing with structured, ticket-ready remediation for product teams.">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
 
   <!-- WCAG 2.4.1 Skip Link -->
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <header>
-    <div class="container header-top">
-      <div class="header-brand">
-        <a href="index.html" class="logo-link" aria-label="Source Accessibility homepage">
-          <img src="assets/img/SourceAccessibility Transp WebsiteBlue.png" alt="" class="header-logo">
-        </a>
-        <div class="brand-text">
-          <span class="site-name">Source Accessibility</span>
-          <span class="site-tagline">Accessibility shaped by lived experience</span>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-top">
+        <div class="header-brand">
+          <a class="header-logo-link" href="index.html" aria-label="Source Accessibility home">
+            <img class="header-logo" src="assets/img/SourceAccessibility Transp WebsiteBlue.png" alt="Source Accessibility logo">
+          </a>
+          <div class="brand-text">
+            <span class="site-name">Source Accessibility</span>
+            <span class="site-tagline">Inclusive digital accessibility, testing &amp; research</span>
+          </div>
         </div>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li class="nav-services">
+              <button class="nav-services-toggle" type="button" aria-expanded="false" aria-controls="services-menu">Services</button>
+              <ul class="services-menu" id="services-menu" hidden>
+                <li><a href="services.html">All services</a></li>
+                <li><a href="services.html#inclusive-research">Inclusive Research &amp; User Testing</a></li>
+                <li><a href="services.html#at-testing">Assistive Technology Health Checks</a></li>
+                <li><a href="services.html#audits">Accessibility Audits &amp; Action Roadmaps</a></li>
+                <li><a href="services.html#granular-discovery">Granular Journey Discovery &amp; Moderated Research</a></li>
+                <li><a href="services.html#inclusive-design">Inclusive Design &amp; User-Centred Product Development</a></li>
+                <li><a href="services.html#procurement">Strategic Procurement &amp; Supplier Testing</a></li>
+                <li><a href="services.html#benchmarking">Accessibility Benchmarking &amp; Measurement</a></li>
+                <li><a href="services.html#capability-building">Accessibility Strategy, Training &amp; Mentoring</a></li>
+                <li><a href="services.html#ai-readiness">AI-Agent Readiness &amp; Human-Verified Assurance</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html" aria-current="page">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav aria-label="Primary navigation">
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html" aria-current="page">About</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-      </nav>
     </div>
   </header>
 

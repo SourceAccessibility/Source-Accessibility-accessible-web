@@ -133,8 +133,81 @@ header {
   align-items: center;
 }
 
-.nav-list a[aria-current="page"] {
+.nav-services {
+  position: relative;
+}
+
+.nav-services-toggle {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--text-main);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nav-services-toggle:hover,
+.nav-services-toggle:focus-visible {
+  color: var(--brand-primary);
+}
+
+.nav-list a[aria-current="page"],
+.nav-services-toggle[aria-current="page"] {
   border-bottom: 2px solid var(--brand-primary);
+}
+
+.services-menu,
+.services-menu[hidden] {
+  display: none;
+}
+
+.services-menu:not([hidden]) {
+  position: absolute;
+  z-index: 10;
+  top: 100%;
+  right: 0;
+  display: block;
+  width: max-content;
+  min-width: 18rem;
+  max-width: min(26rem, calc(100vw - 2rem));
+  max-height: min(70vh, 34rem);
+  overflow-y: auto;
+  margin: 0;
+  padding: 0.5rem;
+  list-style: none;
+  background: var(--panel-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 30%);
+}
+
+.services-menu a {
+  display: block;
+  min-height: 44px;
+  padding: 0.65rem 0.75rem;
+  border-radius: 0.25rem;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.services-menu a:hover,
+.services-menu a:focus-visible {
+  background: var(--bg-body);
+  color: var(--brand-primary);
+}
+
+@media (min-width: 1000px) {
+  .site-header .container {
+    padding-inline: 4rem;
+  }
+
+  .main-nav {
+    margin-right: 2rem;
+  }
 }
 
 /* Typography */
@@ -166,6 +239,10 @@ p { max-width: 65ch; }
   margin-bottom: 1.25rem;
 }
 
+.home-hero h1 span {
+  display: block;
+}
+
 .hero-intro {
   font-size: 1.25rem;
   font-weight: 500;
@@ -183,12 +260,48 @@ p { max-width: 65ch; }
   line-height: 1.65;
 }
 
+.home-hero .hero-support + .hero-support {
+  margin-top: 1rem;
+}
+
 .hero-result {
   margin-top: 1rem;
 }
 
 .hero-cta {
   margin-top: 1.5rem;
+}
+
+.services-intro {
+  max-width: 52rem;
+  margin-bottom: 2rem;
+}
+
+.services-intro p {
+  max-width: none;
+  margin: 0;
+}
+
+.services-positioning {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.services-positioning strong,
+.services-positioning span {
+  display: block;
+}
+
+.services-promise {
+  margin-top: 1rem !important;
+  color: var(--brand-primary);
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .home-hero h1 span {
+    display: inline;
+  }
 }
 
 /* Main Content Section Banding */
@@ -406,6 +519,65 @@ main section.hero {
   border: 1px dashed var(--brand-primary);
   border-radius: 12px;
   padding: 1.5rem;
+}
+
+.services-page .services-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.services-page .service-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(16rem, 20rem);
+  align-items: center;
+  gap: 1.5rem 3rem;
+  border: 2px dashed var(--accent-soft, #d6c1b1) !important;
+  border-radius: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.services-page .service-card:hover {
+  border-color: var(--brand-primary) !important;
+  box-shadow: 0 8px 20px rgb(0 0 0 / 25%);
+}
+
+.services-page .service-card-content {
+  min-width: 0;
+}
+
+.services-page .service-card-content > :last-child {
+  margin-bottom: 0;
+}
+
+.services-page .service-card-action {
+  grid-column: 2;
+  align-self: center;
+  margin: 0;
+  padding: 0;
+}
+
+.services-page .service-card h3:focus {
+  outline: 3px solid var(--brand-focus);
+  outline-offset: 4px;
+}
+
+.service-card-read-more summary {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  color: var(--brand-primary);
+}
+
+.service-card-read-more summary strong {
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.service-card-read-more summary span {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
 }
 
 /* Forms (WCAG 1.4.11 Non-Text Contrast) */
@@ -740,6 +912,20 @@ footer {
 
 /* Responsive Behavior for Tablets & Mobile Screens */
 @media (max-width: 800px) {
+  .services-menu:not([hidden]) {
+    right: auto;
+    left: 0;
+  }
+
+  .services-page .service-card {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+
+  .services-page .service-card-action {
+    grid-column: 1;
+  }
+
   .testimonial-card.horizontal {
     flex-direction: column;
     align-items: flex-start;

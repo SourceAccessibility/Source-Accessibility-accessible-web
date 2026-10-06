@@ -10,6 +10,7 @@
   <meta property="og:image" content="https://sourceaccessibility.co.uk/assets/img/SourceAccessibility%20Transp%20WebsiteBlue.png">
   <meta property="og:url" content="https://sourceaccessibility.co.uk/">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
 
@@ -32,7 +33,21 @@
         <nav class="main-nav" aria-label="Primary navigation">
           <ul class="nav-list">
             <li><a href="index.html" aria-current="page">Home</a></li>
-            <li><a href="services.html">Services</a></li>
+            <li class="nav-services">
+              <button class="nav-services-toggle" type="button" aria-expanded="false" aria-controls="services-menu">Services</button>
+              <ul class="services-menu" id="services-menu" hidden>
+                <li><a href="services.html">All services</a></li>
+                <li><a href="services.html#inclusive-research">Inclusive Research &amp; User Testing</a></li>
+                <li><a href="services.html#at-testing">Assistive Technology Health Checks</a></li>
+                <li><a href="services.html#audits">Accessibility Audits &amp; Action Roadmaps</a></li>
+                <li><a href="services.html#granular-discovery">Granular Journey Discovery &amp; Moderated Research</a></li>
+                <li><a href="services.html#inclusive-design">Inclusive Design &amp; User-Centred Product Development</a></li>
+                <li><a href="services.html#procurement">Strategic Procurement &amp; Supplier Testing</a></li>
+                <li><a href="services.html#benchmarking">Accessibility Benchmarking &amp; Measurement</a></li>
+                <li><a href="services.html#capability-building">Accessibility Strategy, Training &amp; Mentoring</a></li>
+                <li><a href="services.html#ai-readiness">AI-Agent Readiness &amp; Human-Verified Assurance</a></li>
+              </ul>
+            </li>
             <li><a href="about.html">About</a></li>
             <li><a href="index.html#contact">Contact</a></li>
           </ul>
@@ -44,17 +59,14 @@
   <main id="main-content">
     
     <!-- Hero / Intro -->
-    <section class="hero" aria-labelledby="hero-heading">
-      <div class="container">
-        <h1 id="hero-heading">Digital Accessibility shaped by lived experience</h1>
+    <section class="hero home-hero" aria-labelledby="hero-heading">
+      <div class="container-narrow">
+        <h1 id="hero-heading"><span>Digital Accessibility</span> <span>shaped by lived experience</span></h1>
         <p class="hero-intro">
           We help digital teams build accessible products through expert technical evaluation and testing with our panel of disabled and neurodivergent users.
         </p>
         <p class="hero-support">
-          Our work combines deep accessibility expertise with real-world user testing to understand how digital services work in practice across a range of access needs and assistive technologies — including screen readers, Voice Control, magnification, keyboard-only and switch access. We recognise that access needs can change too, shaped by people’s circumstances, environments and the way they interact with technology.
-        </p>
-        <p class="hero-support hero-result">
-          <strong>The result is a more complete picture of how your digital service works for the people who use it — and where it can work better.</strong>
+          Our work combines deep accessibility expertise with real-world user testing to understand how digital services work in practice — bringing together technical accessibility and lived experience to identify what works, what creates friction and where things can work better.
         </p>
         <a href="#contact" class="button-primary hero-cta">Talk to us about a project</a>
       </div>
@@ -64,11 +76,13 @@
     <section id="services" class="services-section" aria-labelledby="services-heading">
       <div class="container">
         <h2 id="services-heading">What we do</h2>
-        <p class="section-intro">
-          <strong>Not one-size-fits-all accessibility.</strong>
-          <br>
-          <strong>Bespoke accessibility solutions where technical expertise meets lived experience.</strong>
-        </p>
+        <div class="services-intro">
+          <p class="services-positioning">
+            <strong>Not one-size-fits-all accessibility.</strong>
+            <span>Bespoke accessibility solutions where technical expertise meets lived experience.</span>
+          </p>
+          <p class="services-promise">We understand it. We evidence it. We make it actionable.</p>
+        </div>
 
         <div class="services-grid">
           <article class="service-card feature-promo-card">
@@ -84,7 +98,12 @@
               <span class="badge-tag">Technical Validation</span>
             </a>
             <h3>Assistive Technology Health Checks</h3>
-            <p>Expert reviews across screen readers (VoiceOver, NVDA, JAWS), Voice Control, magnification, keyboard, and switch navigation to catch blockers and expose barriers and friction.</p>
+            <p><em>Expert testing with screen readers including VoiceOver, NVDA and JAWS, alongside Voice Control, magnification, keyboard and switch access. Designed to identify accessibility blockers early and validate how experiences work in practice.</em></p>
+            <details class="service-card-read-more">
+              <summary><strong>See how experiences work in practice.</strong> <span>Read more</span></summary>
+              <p>Hands-on testing across assistive technologies explores how people access, navigate and interact with digital experiences — identifying compatibility issues, friction and barriers that automated checks or single-technology testing can miss.</p>
+              <p><strong>Testing is performed in-house, with the option to validate findings with disabled users where real-world user verification is needed. Scope can be shaped around your priorities and timelines, from rapid manual checks to more in-depth assessment. Findings are presented in a clear, focused format, with the technical detail needed for remediation alongside concise insight to support product decisions and wider accessibility understanding.</strong></p>
+            </details>
           </article>
 
           <article class="service-card feature-promo-card">

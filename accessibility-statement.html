@@ -6,6 +6,7 @@
   <title>Accessibility Statement | Source Accessibility</title>
   <meta name="description" content="Accessibility Statement for Source Accessibility Ltd detailing WCAG 2.2 AA conformance, testing methodology, and direct feedback routes.">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body id="top">
 
@@ -28,7 +29,21 @@
         <nav class="main-nav" aria-label="Primary navigation">
           <ul class="nav-list">
             <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
+            <li class="nav-services">
+              <button class="nav-services-toggle" type="button" aria-expanded="false" aria-controls="services-menu">Services</button>
+              <ul class="services-menu" id="services-menu" hidden>
+                <li><a href="services.html">All services</a></li>
+                <li><a href="services.html#inclusive-research">Inclusive Research &amp; User Testing</a></li>
+                <li><a href="services.html#at-testing">Assistive Technology Health Checks</a></li>
+                <li><a href="services.html#audits">Accessibility Audits &amp; Action Roadmaps</a></li>
+                <li><a href="services.html#granular-discovery">Granular Journey Discovery &amp; Moderated Research</a></li>
+                <li><a href="services.html#inclusive-design">Inclusive Design &amp; User-Centred Product Development</a></li>
+                <li><a href="services.html#procurement">Strategic Procurement &amp; Supplier Testing</a></li>
+                <li><a href="services.html#benchmarking">Accessibility Benchmarking &amp; Measurement</a></li>
+                <li><a href="services.html#capability-building">Accessibility Strategy, Training &amp; Mentoring</a></li>
+                <li><a href="services.html#ai-readiness">AI-Agent Readiness &amp; Human-Verified Assurance</a></li>
+              </ul>
+            </li>
             <li><a href="about.html">About</a></li>
             <li><a href="index.html#contact">Contact</a></li>
           </ul>
