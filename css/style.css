@@ -514,8 +514,9 @@ main section.threads-section {
 
 .service-category > h3 {
   margin: 0 0 1rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 1.2;
+  color: var(--brand-primary);
 }
 
 .service-category > p {
@@ -524,6 +525,25 @@ main section.threads-section {
 
 .service-category .services-grid {
   margin-top: 0;
+}
+
+/* Putty cards with dark text (approx. 6:1 and above on #d6c1b1) */
+.service-category .service-card {
+  background: #d6c1b1;
+  border: 1px solid #b9a291 !important;
+  color: #334155;
+}
+
+.service-category .service-card p {
+  color: #334155;
+}
+
+.service-category .service-card-title a {
+  color: #1e293b;
+}
+
+.service-category .service-card-title a:focus-visible {
+  outline-color: #1e293b !important;
 }
 
 @media (max-width: 800px) {
@@ -859,6 +879,12 @@ footer {
   min-height: 24px;
   display: inline-flex;
   align-items: center;
+}
+
+.footer-docs {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-color);
 }
 
 .footer-links a[aria-current="page"] {
