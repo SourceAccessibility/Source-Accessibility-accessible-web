@@ -535,22 +535,23 @@ main section.threads-section {
   margin-top: 2rem;
 }
 
-.service-category {
-  background: var(--panel-surface, #0f172a);
-  border: 2px dashed var(--accent-soft, #d6c1b1);
-  border-radius: 1rem;
-  padding: 2rem 2.25rem;
+main section.service-category {
+  background: none;
+  border: 0;
+  border-top: 4px solid var(--strip-bg);
+  border-radius: 0;
+  padding: 1.5rem 0 0;
 }
 
-.service-category + .service-category {
-  margin-top: 2rem;
+main section.service-category + .service-category {
+  margin-top: 3.5rem;
 }
 
 .service-category > h3 {
   margin: 0 0 1rem;
   font-size: 1.6rem;
   line-height: 1.2;
-  color: var(--brand-primary);
+  color: var(--strip-bg);
 }
 
 .service-category > p {
@@ -631,18 +632,12 @@ main section.threads-section {
   padding: 1rem 1.5rem 1.25rem;
   text-align: right;
   font-weight: 700;
-  color: var(--brand-primary);
+  color: var(--strip-bg, var(--brand-primary));
 }
 
 .service-card:hover .service-card-more {
   text-decoration: underline;
   text-underline-offset: 0.2em;
-}
-
-@media (max-width: 800px) {
-  .service-category {
-    padding: 1.5rem;
-  }
 }
 
 .service-card-title {
