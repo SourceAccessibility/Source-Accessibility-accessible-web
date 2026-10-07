@@ -739,6 +739,11 @@ main section.service-category + .service-category {
   transition: background-color 0.2s ease;
 }
 
+.services-page .service-card,
+.services-page .service-card > h4 {
+  scroll-margin-top: 1.5rem;
+}
+
 .services-page .service-card > h4:focus {
   outline: 3px solid #1e293b;
   outline-offset: -6px;

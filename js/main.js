@@ -14,6 +14,13 @@ const focusHashTarget = () => {
 
 focusHashTarget();
 window.addEventListener("hashchange", focusHashTarget);
+window.addEventListener("load", () => {
+  window.setTimeout(() => {
+    if (document.activeElement === document.body) {
+      focusHashTarget();
+    }
+  }, 0);
+});
 
 document.querySelectorAll(".service-card-toggle").forEach((button) => {
   const panel = document.getElementById(button.getAttribute("aria-controls"));
