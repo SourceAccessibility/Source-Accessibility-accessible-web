@@ -51,23 +51,45 @@
       </div>
     </section>
 
-    <!-- Services -->
-    <section aria-labelledby="capabilities-heading">
+    <!-- Services overview -->
+    <section class="services-overview" aria-labelledby="overview-heading">
       <div class="container">
-        <h2 id="capabilities-heading">Services</h2>
+        <h2 id="overview-heading">Accessibility, shaped around what you need</h2>
+        <p>Our services fall into three areas, from testing and research through to improvement, embedded support and specialist expertise.</p>
+        <dl class="services-overview-list">
+          <div class="services-overview-item services-overview-item--test">
+            <dt>Test &amp; Understand</dt>
+            <dd>Find out how digital experiences work in practice.</dd>
+          </div>
+          <div class="services-overview-item services-overview-item--improve">
+            <dt>Improve &amp; Embed</dt>
+            <dd>Turn evidence into better products, stronger teams and lasting change.</dd>
+          </div>
+          <div class="services-overview-item services-overview-item--specialist">
+            <dt>Specialist Support</dt>
+            <dd>Focused expertise for specific accessibility challenges, teams and emerging needs.</dd>
+          </div>
+        </dl>
+        <p>Not sure what you need? <a class="text-link" href="contact.html"><strong>Get in touch</strong></a>.</p>
+      </div>
+    </section>
 
-        <div class="services-grid">
-          
-          <!-- Card 1 -->
+    <!-- Services -->
+    <section class="services-list" aria-label="Services">
+      <div class="container">
+        <section class="services-group services-group--test" aria-labelledby="test-understand-heading">
+          <h3 id="test-understand-heading">Test &amp; Understand</h3>
+          <div class="services-grid">
           <article class="service-card feature-promo-card" id="inclusive-research">
+            <h4 id="inclusive-research-heading" tabindex="-1">Inclusive Research &amp; User Testing</h4>
             <div class="service-card-content">
-            <span class="badge-tag">Lived Experience</span>
-            <h3 id="inclusive-research-heading" tabindex="-1">Inclusive Research &amp; User Testing</h3>
             <p>Task-based studies with disabled and neurodivergent participants using real assistive technologies to uncover genuine usability barriers across digital journeys.</p>
-            <details class="service-card-read-more">
-              <summary><strong>Go beyond the task.</strong> <span>Read more</span></summary>
-              <p>Using real assistive technologies and a broad range of accessibility and user research methods, we connect what people experience with why it matters and where improvements can be made. <strong>Findings are translated into clear, purposeful insights — with the level of detail and language needed to support everything from technical remediation and product decisions to wider organisational understanding and buy-in.</strong></p>
-            </details>
+            <div class="service-card-read-more">
+              <button type="button" class="service-card-toggle" aria-expanded="true" aria-controls="inclusive-research-details" aria-describedby="inclusive-research-heading" hidden><strong>Go beyond the task.</strong> <span class="toggle-label">Show less</span></button>
+              <div class="service-card-details" id="inclusive-research-details">
+                <p>Using real assistive technologies and a broad range of accessibility and user research methods, we connect what people experience with why it matters and where improvements can be made. <strong>Findings are translated into clear, purposeful insights — with the level of detail and language needed to support everything from technical remediation and product decisions to wider organisational understanding and buy-in.</strong></p>
+              </div>
+            </div>
             </div>
             <div class="service-card-action">
               <a href="mailto:info@sourceaccessibility.co.uk?subject=Inquiry%20about%20Inclusive%20Research%20%26%20User%20Testing&body=Hello%20Marie%2C%0A%0AI%20would%20like%20to%20discuss%20an%20Inclusive%20Research%20%26%20User%20Testing%20engagement%20for%20our%20product.%0A%0AProject%20details%3A%0ATimeline%3A" class="button-primary card-enquire-btn">
@@ -76,17 +98,17 @@
             </div>
           </article>
 
-          <!-- Card 2 -->
           <article class="service-card feature-promo-card" id="at-testing">
+            <h4 id="at-testing-heading" tabindex="-1">Assistive Technology Health Checks</h4>
             <div class="service-card-content">
-            <span class="badge-tag">Technical Validation</span>
-            <h3 id="at-testing-heading" tabindex="-1">Assistive Technology Health Checks</h3>
-            <p><em>Expert testing with screen readers including VoiceOver, NVDA and JAWS, alongside Voice Control, magnification, keyboard and switch access. Designed to identify accessibility blockers early and validate how experiences work in practice.</em></p>
-            <details class="service-card-read-more">
-              <summary><strong>Test with a light touch.</strong> <span>Read more</span></summary>
-              <p>Hands-on testing across assistive technologies explores how people access, navigate and interact with digital experiences — identifying compatibility issues, friction and barriers that automated checks or single-technology testing can miss.</p>
+            <p>Expert testing with screen readers including VoiceOver, NVDA and JAWS, alongside Voice Control, magnification, keyboard and switch access. Designed to identify accessibility blockers early and validate how experiences work in practice.</p>
+            <div class="service-card-read-more">
+              <button type="button" class="service-card-toggle" aria-expanded="true" aria-controls="at-testing-details" aria-describedby="at-testing-heading" hidden><strong>Test with a light touch.</strong> <span class="toggle-label">Show less</span></button>
+              <div class="service-card-details" id="at-testing-details">
+                <p>Hands-on testing across assistive technologies explores how people access, navigate and interact with digital experiences — identifying compatibility issues, friction and barriers that automated checks or single-technology testing can miss.</p>
               <p><strong>Testing is performed in-house, with the option to validate findings with disabled users where real-world user verification is needed. Scope can be shaped around your priorities and timelines, from rapid manual checks to more in-depth assessment. Findings are presented in a clear, focused format, with the technical detail needed for remediation alongside concise insight to support product decisions and wider accessibility understanding.</strong></p>
-            </details>
+              </div>
+            </div>
             </div>
             <div class="service-card-action">
               <a href="mailto:info@sourceaccessibility.co.uk?subject=Inquiry%20about%20Assistive%20Technology%20Health%20Checks&body=Hello%20Marie%2C%0A%0AI%20would%20like%20to%20discuss%20an%20Assistive%20Technology%20Health%20Check%20for%20our%20digital%20service.%0A%0AProject%20details%3A%0ATimeline%3A" class="button-primary card-enquire-btn">
@@ -95,17 +117,41 @@
             </div>
           </article>
 
-          <!-- Card 3 -->
-          <article class="service-card feature-promo-card" id="audits">
+          <article class="service-card feature-promo-card" id="granular-discovery">
+            <h4 id="granular-discovery-heading" tabindex="-1">Granular Journey Discovery &amp; Moderated Research</h4>
             <div class="service-card-content">
-            <span class="badge-tag">Compliance &amp; EAA</span>
-            <h3 id="audits-heading" tabindex="-1">Accessibility Audits &amp; Action Roadmaps</h3>
+            <p>In-depth research into digital journeys, interactions and user behaviour to uncover friction, workarounds and points of exclusion — revealing where experiences can be improved.</p>
+            <div class="service-card-read-more">
+              <button type="button" class="service-card-toggle" aria-expanded="true" aria-controls="granular-discovery-details" aria-describedby="granular-discovery-heading" hidden><strong>Understand the journey, not just the task.</strong> <span class="toggle-label">Show less</span></button>
+              <div class="service-card-details" id="granular-discovery-details">
+                <p>Carefully planned research explores digital journeys in depth, from prototypes, content and wording through to design, functionality and interaction. Research can be moderated and tailored to the project, with testing across assistive technologies and, where appropriate, replication or verification with disabled users.</p>
+              <p>Our standardised reporting methodology captures outcomes consistently, making evidence easier to compare, track and act on over time. This can support ongoing accessibility audits, product development and continuous improvement — helping teams understand not just whether a journey works, but where people encounter friction and why.</p>
+              </div>
+            </div>
+            </div>
+            <div class="service-card-action">
+              <a href="mailto:info@sourceaccessibility.co.uk?subject=Inquiry%20about%20Granular%20Journey%20Discovery&body=Hello%20Marie%2C%0A%0AWe%20would%20like%20to%20discuss%20Granular%20Journey%20Discovery%20and%20Moderated%20Research%20for%20our%20core%20user%20flows.%0A%0AProduct%20context%3A%0ATimeline%3A" class="button-primary card-enquire-btn">
+                User Experience Improvement Enquiries
+              </a>
+            </div>
+          </article>
+          </div>
+        </section>
+
+        <section class="services-group services-group--improve" aria-labelledby="improve-embed-heading">
+          <h3 id="improve-embed-heading">Improve &amp; Embed</h3>
+          <div class="services-grid">
+          <article class="service-card feature-promo-card" id="audits">
+            <h4 id="audits-heading" tabindex="-1">Accessibility Audits &amp; Action Roadmaps</h4>
+            <div class="service-card-content">
             <p>WCAG 2.2 Level AA and applicable EAA-aligned reviews that combine technical evaluation with practical recommendations. Findings are prioritised and translated into clear, actionable remediation for product and engineering teams.</p>
-            <details class="service-card-read-more">
-              <summary><strong>Turn findings into action.</strong> <span>Read more</span></summary>
-              <p>Accessibility findings are translated into clear, structured and ticket-ready work, giving teams the detail they need to understand, prioritise and resolve issues.</p>
+            <div class="service-card-read-more">
+              <button type="button" class="service-card-toggle" aria-expanded="true" aria-controls="audits-details" aria-describedby="audits-heading" hidden><strong>Turn findings into action.</strong> <span class="toggle-label">Show less</span></button>
+              <div class="service-card-details" id="audits-details">
+                <p>Accessibility findings are translated into clear, structured and ticket-ready work, giving teams the detail they need to understand, prioritise and resolve issues.</p>
               <p>Using AI-assisted workflows alongside robust, repeatable testing frameworks, we help QA, product and engineering teams build accessibility into existing ways of working — from individual features to complex digital ecosystems. <strong>Findings can be supported with live assistive technology demonstrations and video clips, making barriers easier to understand and helping teams see the user impact alongside the technical detail.</strong></p>
-            </details>
+              </div>
+            </div>
             </div>
             <div class="service-card-action">
               <a href="mailto:info@sourceaccessibility.co.uk?subject=Inquiry%20about%20Accessibility%20Audits%20%26%20Roadmaps&body=Hello%20Marie%2C%0A%0AI%20would%20like%20to%20request%20information%20on%20an%20Accessibility%20Audit%20and%20remediation%20roadmap.%0A%0AProduct%20URL%2FApp%3A%0ATarget%20Deadline%3A" class="button-primary card-enquire-btn">
@@ -114,36 +160,17 @@
             </div>
           </article>
 
-          <!-- Card 4 -->
-          <article class="service-card feature-promo-card" id="granular-discovery">
-            <div class="service-card-content">
-            <span class="badge-tag">Conversion &amp; Opportunity</span>
-            <h3 id="granular-discovery-heading" tabindex="-1">Granular Journey Discovery &amp; Research</h3>
-            <p>In-depth research into digital journeys, interactions and user behaviour to uncover friction, workarounds and points of exclusion — revealing where experiences can be improved.</p>
-            <details class="service-card-read-more">
-              <summary><strong>Understand the journey, not just the task.</strong> <span>Read more</span></summary>
-              <p>Carefully planned research explores digital journeys in depth, from prototypes, content and wording through to design, functionality and interaction. Research can be moderated and tailored to the project, with testing across assistive technologies and, where appropriate, replication or verification with disabled users.</p>
-              <p>Our standardised reporting methodology captures outcomes consistently, making evidence easier to compare, track and act on over time. This can support ongoing accessibility audits, product development and continuous improvement — helping teams understand not just whether a journey works, but where people encounter friction and why.</p>
-            </details>
-            </div>
-            <div class="service-card-action">
-              <a href="mailto:info@sourceaccessibility.co.uk?subject=Inquiry%20about%20Granular%20Journey%20Discovery&body=Hello%20Marie%2C%0A%0AWe%20would%20like%20to%20discuss%20Granular%20Journey%20Discovery%20and%20Moderated%20Research%20for%20our%20core%20user%20flows.%0A%0AProduct%20context%3A%0ATimeline%3A" class="button-primary card-enquire-btn">
-                User Experience Improvement Enquiries
-              </a>
-            </div>
-          </article>
-
-          <!-- Card 5 -->
           <article class="service-card feature-promo-card" id="inclusive-design">
+            <h4 id="inclusive-design-heading" tabindex="-1">Inclusive Design &amp; User-Centred Product Development</h4>
             <div class="service-card-content">
-            <span class="badge-tag">Value-Driven Design</span>
-            <h3 id="inclusive-design-heading" tabindex="-1">Inclusive Design &amp; User-Centred Product Development</h3>
             <p>Expert evaluation and disabled-user research to shape digital products from early concepts through prototypes and live services — testing ideas, challenging assumptions and validating what works in practice.</p>
-            <details class="service-card-read-more">
-              <summary><strong>Design with users, not assumptions.</strong> <span>Read more</span></summary>
-              <p>We work alongside product and design teams at different stages of development, combining accessibility and UX evaluation with disabled-user research where appropriate. Early expert evaluation can identify accessibility, usability and interaction issues before they become difficult or costly to change, with disabled-user testing used to explore, validate or challenge those findings where the project calls for it.</p>
+            <div class="service-card-read-more">
+              <button type="button" class="service-card-toggle" aria-expanded="true" aria-controls="inclusive-design-details" aria-describedby="inclusive-design-heading" hidden><strong>Design with users, not assumptions.</strong> <span class="toggle-label">Show less</span></button>
+              <div class="service-card-details" id="inclusive-design-details">
+                <p>We work alongside product and design teams at different stages of development, combining accessibility and UX evaluation with disabled-user research where appropriate. Early expert evaluation can identify accessibility, usability and interaction issues before they become difficult or costly to change, with disabled-user testing used to explore, validate or challenge those findings where the project calls for it.</p>
               <p>We can test concepts, prototypes, language, content and interactions, and validate journeys as products develop. Drawing on a broad range of research and accessibility methods, we translate what we learn into practical improvements that help teams create clearer, more intuitive and inclusive digital experiences.</p>
-            </details>
+              </div>
+            </div>
             </div>
             <div class="service-card-action">
               <a href="mailto:info@sourceaccessibility.co.uk?subject=Inquiry%20about%20Inclusive%20Design%20%26%20User%20Needs&body=Hello%20Marie%2C%0A%0AWe%20would%20like%20to%20discuss%20Inclusive%20Design%20consultancy%20and%20uncovering%20unmet%20user%20access%20needs.%0A%0AProduct%20context%3A%0ATimeline%3A" class="button-primary card-enquire-btn">
@@ -152,17 +179,42 @@
             </div>
           </article>
 
-          <!-- Card 6 -->
-          <article class="service-card feature-promo-card" id="procurement">
+          <article class="service-card feature-promo-card" id="accessibility-partnership">
+            <h4 id="accessibility-partnership-heading" tabindex="-1">Accessibility Partnership &amp; Embedded Support</h4>
             <div class="service-card-content">
-            <span class="badge-tag">Vendor Assurance</span>
-            <h3 id="procurement-heading" tabindex="-1">Strategic Procurement &amp; Supplier Testing</h3>
+            <p>Ongoing accessibility expertise that adapts to your organisation, your products and your priorities, providing the right support as needs evolve.</p>
+            <div class="service-card-read-more">
+              <button type="button" class="service-card-toggle" aria-expanded="true" aria-controls="accessibility-partnership-details" aria-describedby="accessibility-partnership-heading" hidden><strong>Your accessibility partner, when you need us.</strong> <span class="toggle-label">Show less</span></button>
+              <div class="service-card-details" id="accessibility-partnership-details">
+                <p>We work alongside your teams on projects, internal programmes and day-to-day accessibility needs, combining any of our services as required. Working closely with your people and products gives us the context to understand how your organisation works, where the challenges are and where we can make the greatest difference.</p>
+              <p>Support can include ongoing advice via Slack, accessibility and product reviews, live assistive technology testing, manual testing, disabled-user research, remediation and validation, workshops and team sessions. For UK clients, we can also work directly with teams in person where that adds value.</p>
+              <p>The model is flexible. We can step up when a project needs more support, provide specialist input when a team has a question, or stay alongside you as an ongoing accessibility resource. The result is deeper product knowledge, stronger relationships with your teams and accessibility support that becomes increasingly useful over time.</p>
+              </div>
+            </div>
+            </div>
+            <div class="service-card-action">
+              <a href="mailto:info@sourceaccessibility.co.uk?subject=Inquiry%20about%20Accessibility%20Partnership%20%26%20Embedded%20Support&amp;body=Hello%20Marie%2C%0A%0AI%20would%20like%20to%20discuss%20an%20ongoing%20accessibility%20partnership%20for%20our%20organisation.%0A%0AOur%20priorities%3A%0ATeam%20and%20product%20context%3A" class="button-primary card-enquire-btn">
+                Accessibility Partnership Enquiries
+              </a>
+            </div>
+          </article>
+          </div>
+        </section>
+
+        <section class="services-group services-group--specialist" aria-labelledby="specialist-support-heading">
+          <h3 id="specialist-support-heading">Specialist Support</h3>
+          <div class="services-grid">
+          <article class="service-card feature-promo-card" id="procurement">
+            <h4 id="procurement-heading" tabindex="-1">Strategic Procurement &amp; Supplier Testing</h4>
+            <div class="service-card-content">
             <p>Evaluate third-party software, vendors, white-label services and digital tools against real business needs, accessibility requirements and how people will use them in practice.</p>
-            <details class="service-card-read-more">
-              <summary><strong>Test before you commit.</strong> <span>Read more</span></summary>
-              <p>We translate business use cases and procurement requirements into robust, repeatable tests that can be applied across different products and suppliers. Testing can include real assistive technologies and, where appropriate, disabled-user evaluation to understand accessibility, usability and the wider experience in practice.</p>
+            <div class="service-card-read-more">
+              <button type="button" class="service-card-toggle" aria-expanded="true" aria-controls="procurement-details" aria-describedby="procurement-heading" hidden><strong>Test before you commit.</strong> <span class="toggle-label">Show less</span></button>
+              <div class="service-card-details" id="procurement-details">
+                <p>We translate business use cases and procurement requirements into robust, repeatable tests that can be applied across different products and suppliers. Testing can include real assistive technologies and, where appropriate, disabled-user evaluation to understand accessibility, usability and the wider experience in practice.</p>
               <p>This provides a consistent basis for comparing suppliers, identifying accessibility risks and making informed procurement decisions before contracts are awarded.</p>
-            </details>
+              </div>
+            </div>
             </div>
             <div class="service-card-action">
               <a href="mailto:info@sourceaccessibility.co.uk?subject=Inquiry%20about%20Strategic%20Procurement%20Testing&body=Hello%20Marie%2C%0A%0AWe%20are%20evaluating%20third-party%20vendors%20and%20would%20like%20to%20discuss%20Procurement%20Accessibility%20Testing.%0A%0AVendor%2FTool%20details%3A%0AProcurement%20Timeline%3A" class="button-primary card-enquire-btn">
@@ -171,17 +223,17 @@
             </div>
           </article>
 
-          <!-- Card 7 -->
           <article class="service-card feature-promo-card" id="benchmarking">
+            <h4 id="benchmarking-heading" tabindex="-1">Accessibility Benchmarking &amp; Measurement</h4>
             <div class="service-card-content">
-            <span class="badge-tag">Strategy &amp; Measurement</span>
-            <h3 id="benchmarking-heading" tabindex="-1">Accessibility Benchmarking &amp; Measurement</h3>
             <p>Establish repeatable baseline measures across core user journeys to track accessibility progress over time, identify recurring barriers and understand where further investment can make the greatest difference.</p>
-            <details class="service-card-read-more">
-              <summary><strong>Measure progress, not just compliance.</strong> <span>Read more</span></summary>
-              <p>We create structured, repeatable frameworks that allow organisations to compare accessibility across journeys, releases and over time. By combining task completion data with lived-experience testing, teams can measure what is improving, identify where barriers persist and understand how people experience the journey in practice.</p>
+            <div class="service-card-read-more">
+              <button type="button" class="service-card-toggle" aria-expanded="true" aria-controls="benchmarking-details" aria-describedby="benchmarking-heading" hidden><strong>Measure progress, not just compliance.</strong> <span class="toggle-label">Show less</span></button>
+              <div class="service-card-details" id="benchmarking-details">
+                <p>We create structured, repeatable frameworks that allow organisations to compare accessibility across journeys, releases and over time. By combining task completion data with lived-experience testing, teams can measure what is improving, identify where barriers persist and understand how people experience the journey in practice.</p>
               <p>Quantitative measures provide a consistent way to track change, while evidence from disabled users adds context to the results, helping teams understand not just whether performance has changed, but where further accessibility investment may have the greatest impact.</p>
-            </details>
+              </div>
+            </div>
             </div>
             <div class="service-card-action">
               <a href="mailto:info@sourceaccessibility.co.uk?subject=Inquiry%20about%20Benchmarking%20%26%20Accessibility%20Maturity&body=Hello%20Marie%2C%0A%0AWe%20are%20interested%20in%20establishing%20a%20Repeatable%20Benchmarking%20Framework%20and%20measuring%20accessibility%20maturity.%0A%0AOrganization%20details%3A%0ATimeline%3A" class="button-primary card-enquire-btn">
@@ -190,17 +242,17 @@
             </div>
           </article>
 
-          <!-- Card 8 -->
           <article class="service-card feature-promo-card" id="capability-building">
+            <h4 id="capability-building-heading" tabindex="-1">Accessibility Strategy, Training &amp; Mentoring</h4>
             <div class="service-card-content">
-            <span class="badge-tag">Capability Building</span>
-            <h3 id="capability-building-heading" tabindex="-1">Accessibility Strategy, Training &amp; Mentoring</h3>
             <p>Practical guidance, mentoring, awareness sessions and hands-on learning help teams build accessibility into their everyday roles, workflows and decision-making.</p>
-            <details class="service-card-read-more">
-              <summary><strong>Build capability that lasts.</strong> <span>Read more</span></summary>
-              <p>We work with product, UX, research, design and engineering teams to build practical accessibility knowledge and confidence. Sessions can combine tailored workshops, strategic guidance, live assistive technology demonstrations, disabled-user testing and Q&amp;A, helping teams understand accessibility barriers and how they affect people in practice.</p>
+            <div class="service-card-read-more">
+              <button type="button" class="service-card-toggle" aria-expanded="true" aria-controls="capability-building-details" aria-describedby="capability-building-heading" hidden><strong>Build capability that lasts.</strong> <span class="toggle-label">Show less</span></button>
+              <div class="service-card-details" id="capability-building-details">
+                <p>We work with product, UX, research, design and engineering teams to build practical accessibility knowledge and confidence. Sessions can combine tailored workshops, strategic guidance, live assistive technology demonstrations, disabled-user testing and Q&amp;A, helping teams understand accessibility barriers and how they affect people in practice.</p>
               <p>From establishing an accessibility approach and defining responsibilities to mentoring teams through real projects, we help embed accessibility into everyday processes and ways of working. The aim is not simply to share knowledge, but to give teams the confidence, tools and understanding to make better accessibility decisions and keep improving over time.</p>
-            </details>
+              </div>
+            </div>
             </div>
             <div class="service-card-action">
               <a href="mailto:info@sourceaccessibility.co.uk?subject=Inquiry%20about%20Accessibility%20Training%20%26%20Mentoring&body=Hello%20Marie%2C%0A%0AWe%20are%20interested%20in%20Accessibility%20Workshops%2C%20Live%20Demos%2C%20or%20Mentoring%20for%20our%20team.%0A%0ATeam%20size%2Froles%3A%0APreferred%20Format%20(Remote%2FLive)%3A" class="button-primary card-enquire-btn">
@@ -209,18 +261,18 @@
             </div>
           </article>
 
-          <!-- Card 9 -->
           <article class="service-card feature-promo-card" id="ai-readiness">
+            <h4 id="ai-readiness-heading" tabindex="-1">AI-Agent Readiness &amp; Human-Verified Assurance</h4>
             <div class="service-card-content">
-            <span class="badge-tag">Innovation &amp; Integrity</span>
-            <h3 id="ai-readiness-heading" tabindex="-1">AI-Agent Readiness &amp; Human-Verified Assurance</h3>
             <p>Human-verified testing exposes accessibility and interaction barriers that can affect both people and emerging AI agents, helping organisations build more robust digital journeys for the way services are increasingly accessed.</p>
-            <details class="service-card-read-more">
-              <summary><strong>Prepare for what comes next.</strong> <span>Read more</span></summary>
-              <p>AI personas risk creating an illusion of success when prompts need to anticipate the barrier before the persona can encounter it. The test risks validating what is already known rather than providing genuine discovery.</p>
+            <div class="service-card-read-more">
+              <button type="button" class="service-card-toggle" aria-expanded="true" aria-controls="ai-readiness-details" aria-describedby="ai-readiness-heading" hidden><strong>Prepare for what comes next.</strong> <span class="toggle-label">Show less</span></button>
+              <div class="service-card-details" id="ai-readiness-details">
+                <p>AI personas risk creating an illusion of success when prompts need to anticipate the barrier before the persona can encounter it. The test risks validating what is already known rather than providing genuine discovery.</p>
               <p>Our human-verified testing brings real people into the process to uncover unexpected barriers, workarounds and interaction issues that predefined personas and automated checks may not expose.</p>
               <p>These findings can reveal weaknesses in structure, labelling, navigation and interaction that affect not only people using assistive technologies, but also how emerging AI agents interpret and navigate digital experiences. Improving accessibility and creating more consistent, well-structured digital journeys can help both people and AI-enabled tools interact with services more reliably — strengthening experiences today while preparing for emerging agent-based interactions.</p>
-            </details>
+              </div>
+            </div>
             </div>
             <div class="service-card-action">
               <a href="mailto:info@sourceaccessibility.co.uk?subject=Inquiry%20about%20AI-Agent%20Readiness%20%26%20Assurance&body=Hello%20Marie%2C%0A%0AWe%20would%20like%20to%20explore%20AI-Agent%20Readiness%20and%20Human-Verified%20Testing%20for%20our%20digital%20platform.%0A%0AProject%20context%3A%0ATimeline%3A" class="button-primary card-enquire-btn">
@@ -229,39 +281,19 @@
             </div>
           </article>
 
-          <!-- Card 10 -->
-          <article class="service-card feature-promo-card" id="accessibility-partnership">
-            <div class="service-card-content">
-            <span class="badge-tag">Embedded Support</span>
-            <h3 id="accessibility-partnership-heading" tabindex="-1">Accessibility Partnership &amp; Embedded Support</h3>
-            <p>Ongoing accessibility expertise that adapts to your organisation, your products and your priorities, providing the right support as needs evolve.</p>
-            <details class="service-card-read-more">
-              <summary><strong>Your accessibility partner, when you need us.</strong> <span>Read more</span></summary>
-              <p>We work alongside your teams on projects, internal programmes and day-to-day accessibility needs, combining any of our services as required. Working closely with your people and products gives us the context to understand how your organisation works, where the challenges are and where we can make the greatest difference.</p>
-              <p>Support can include ongoing advice via Slack, accessibility and product reviews, live assistive technology testing, manual testing, disabled-user research, remediation and validation, workshops and team sessions. For UK clients, we can also work directly with teams in person where that adds value.</p>
-              <p>The model is flexible. We can step up when a project needs more support, provide specialist input when a team has a question, or stay alongside you as an ongoing accessibility resource. The result is deeper product knowledge, stronger relationships with your teams and accessibility support that becomes increasingly useful over time.</p>
-            </details>
-            </div>
-            <div class="service-card-action">
-              <a href="mailto:info@sourceaccessibility.co.uk?subject=Inquiry%20about%20Accessibility%20Partnership%20%26%20Embedded%20Support&amp;body=Hello%20Marie%2C%0A%0AI%20would%20like%20to%20discuss%20an%20ongoing%20accessibility%20partnership%20for%20our%20organisation.%0A%0AOur%20priorities%3A%0ATeam%20and%20product%20context%3A" class="button-primary card-enquire-btn">
-                Accessibility Partnership Enquiries
-              </a>
-            </div>
-          </article>
-
-          <!-- Card 11 -->
           <article class="service-card feature-promo-card" id="accessibility-demonstrations">
+            <h4 id="accessibility-demonstrations-heading" tabindex="-1">Accessibility Demonstrations, Video &amp; Knowledge Sharing</h4>
             <div class="service-card-content">
-            <span class="badge-tag">Knowledge Sharing</span>
-            <h3 id="accessibility-demonstrations-heading" tabindex="-1">Accessibility Demonstrations, Video &amp; Knowledge Sharing</h3>
             <p>Make accessibility barriers easier to see, understand and act on through live demonstrations, recorded walkthroughs and practical sessions using real products, assistive technologies and the tools your teams already use.</p>
-            <details class="service-card-read-more">
-              <summary><strong>Show it. See it. Understand it.</strong> <span>Read more</span></summary>
-              <p>We create tailored demonstrations that bring accessibility into the room, from live assistive technology testing and product walkthroughs to short recorded evidence for developers, product teams and wider audiences.</p>
+            <div class="service-card-read-more">
+              <button type="button" class="service-card-toggle" aria-expanded="true" aria-controls="accessibility-demonstrations-details" aria-describedby="accessibility-demonstrations-heading" hidden><strong>Show it. See it. Understand it.</strong> <span class="toggle-label">Show less</span></button>
+              <div class="service-card-details" id="accessibility-demonstrations-details">
+                <p>We create tailored demonstrations that bring accessibility into the room, from live assistive technology testing and product walkthroughs to short recorded evidence for developers, product teams and wider audiences.</p>
               <p>Sessions can use your own products, internal platforms and preferred collaboration tools, making accessibility relevant to the way your teams actually work. Demonstrations can show a barrier as it happens, explore the user impact, compare alternative approaches or validate a fix.</p>
               <p>We can also produce focused video evidence to accompany accessibility findings, remediation tickets, training and stakeholder communications. This gives teams something tangible to see and share, helping turn technical findings into a shared understanding of what is happening and why it matters.</p>
               <p>We invite Q & A sessions with our testers and create follow-up channels so teams can continue asking questions directed to the testers.</p>
-            </details>
+              </div>
+            </div>
             </div>
             <div class="service-card-action">
               <a href="mailto:info@sourceaccessibility.co.uk?subject=Inquiry%20about%20Accessibility%20Demonstrations%2C%20Video%20%26%20Knowledge%20Sharing&amp;body=Hello%20Marie%2C%0A%0AI%20would%20like%20to%20discuss%20an%20accessibility%20demonstration%2C%20video%20or%20knowledge-sharing%20session.%0A%0AProduct%20or%20audience%3A%0APreferred%20format%3A" class="button-primary card-enquire-btn">
@@ -269,8 +301,8 @@
               </a>
             </div>
           </article>
-
-        </div>
+          </div>
+        </section>
 
         <div style="margin-top: 3rem; text-align: center;">
           <a href="contact.html" class="button-primary">Discuss a custom engagement</a>
