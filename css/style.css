@@ -76,7 +76,7 @@ body {
 header {
   background: var(--panel-surface);
   padding: 1.25rem 0;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 3px solid var(--brand-primary);
 }
 
 .header-top {
@@ -195,7 +195,7 @@ p { max-width: 65ch; }
 .hero {
   padding: 3.5rem 0 3rem;
   background-color: var(--panel-surface);
-  border-bottom: 1px solid #1e293b;
+  border-bottom: 4px solid var(--brand-primary);
   text-align: left;
 }
 
@@ -318,6 +318,10 @@ main section {
   width: 100%;
   padding: 4rem 0;
   border-bottom: 1px solid var(--border-color);
+}
+
+main > section:last-child {
+  border-bottom: 0;
 }
 
 main section:nth-child(even) {
@@ -560,6 +564,19 @@ main section.service-category + .service-category {
 
 .service-category .services-grid {
   margin-top: 0;
+}
+
+/* Subgrid keeps title bands the same height across a row of cards */
+.service-category .services-grid {
+  row-gap: 0;
+}
+
+.service-category .service-card {
+  display: grid;
+  grid-row: span 3;
+  grid-template-rows: subgrid;
+  row-gap: 0;
+  margin-bottom: 1.5rem;
 }
 
 /* Cards: tinted title strip over a neutral body, tint set per category */
@@ -1070,7 +1087,7 @@ input, textarea {
 footer {
   background-color: var(--panel-surface);
   padding: 2.5rem 0;
-  border-top: 1px solid var(--border-color);
+  border-top: 2px solid var(--brand-primary);
   margin-top: 0;
 }
 
@@ -1102,8 +1119,16 @@ footer {
 
 .footer-docs {
   margin-top: 1.25rem;
-  padding-top: 1.25rem;
-  border-top: 1px solid var(--border-color);
+}
+
+.service-card-details a {
+  color: var(--brand-primary);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.service-card-details a:hover {
+  text-decoration-thickness: 2px;
 }
 
 .footer-links a[aria-current="page"] {
