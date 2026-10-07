@@ -349,7 +349,7 @@ main section.home-hero + section.services-section > .container > h2 {
 }
 
 main section.demo-showcase {
-  padding: 2rem 0;
+  padding: 2rem 0 4rem;
 }
 
 main section.threads-section {
@@ -421,7 +421,7 @@ main section.threads-section {
 
 .video-card {
   background: var(--panel-surface);
-  border: 1px solid var(--border-color);
+  border: 4px solid var(--cat-improve);
   border-radius: 12px;
   overflow: hidden;
   margin-top: 2rem;
@@ -432,6 +432,8 @@ main section.threads-section {
   width: 100%;
   padding-bottom: 56.25%;
   height: 0;
+  border-top: 4px solid var(--cat-improve);
+  border-bottom: 4px solid var(--cat-improve);
 }
 
 .video-aspect-ratio iframe {
@@ -494,18 +496,32 @@ main section.threads-section {
 }
 
 .video-caption .video-closing {
-  margin: 1.5rem 0 0;
-  padding-top: 1.25rem;
-  border-top: 1px solid var(--border-color);
-  color: var(--text-main);
+  max-width: none;
+  margin: 1.5rem -1.5rem -1.5rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--cat-improve);
+  color: var(--bg-body);
   font-weight: 700;
 }
 
 .screen-reader-enquiry {
   max-width: 100%;
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
   text-align: center;
   white-space: normal;
+}
+
+.demo-showcase .screen-reader-enquiry {
+  background-color: var(--button-blue);
+  border-color: var(--brand-primary);
+  color: var(--white);
+}
+
+.demo-showcase .screen-reader-enquiry:hover {
+  background-color: var(--button-blue-hover);
+  border-color: var(--brand-primary);
+  color: var(--white);
 }
 
 /* Buttons (WCAG 2.5.8 Touch Target Minimum 44x44px) */
