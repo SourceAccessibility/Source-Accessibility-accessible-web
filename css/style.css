@@ -965,6 +965,11 @@ input, textarea {
   text-underline-offset: 0.2em;
 }
 
+.email-link,
+.contact-link[href^="mailto:"] {
+  overflow-wrap: anywhere;
+}
+
 .text-link {
   color: var(--brand-primary);
   text-decoration: underline;
