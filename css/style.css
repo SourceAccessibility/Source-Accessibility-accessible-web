@@ -1099,6 +1099,15 @@ input, textarea {
   text-underline-offset: 0.25em;
 }
 
+/* Inline contact links inside lists (Accessibility Statement) keep body size and 600 weight */
+li > a.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: inherit;
+  font-weight: 600;
+}
+
 /* Footer Styling */
 footer {
   background-color: var(--panel-surface);
