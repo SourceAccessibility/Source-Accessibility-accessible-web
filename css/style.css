@@ -527,23 +527,65 @@ main section.threads-section {
   margin-top: 0;
 }
 
-/* Putty cards with dark text (approx. 6:1 and above on #d6c1b1) */
-.service-category .service-card {
-  background: #d6c1b1;
-  border: 1px solid #b9a291 !important;
-  color: #334155;
+/* Cards: tinted title strip over a neutral body, tint set per category */
+.service-category {
+  --strip-bg: #dbeafe;
 }
 
-.service-category .service-card p {
-  color: #334155;
+.service-category--improve {
+  --strip-bg: #d6c1b1;
+}
+
+.service-category--specialist {
+  --strip-bg: #f9dce6;
+}
+
+.service-category .service-card {
+  padding: 0;
+  overflow: hidden;
+  background: #1e293b;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 0.75rem;
+  box-shadow: none;
+}
+
+.service-category .service-card-title {
+  margin: 0;
+  padding: 1rem 1.5rem;
+  background: var(--strip-bg);
 }
 
 .service-category .service-card-title a {
   color: #1e293b;
 }
 
+.service-category .service-card-title a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
 .service-category .service-card-title a:focus-visible {
   outline-color: #1e293b !important;
+}
+
+.service-category .service-card > p {
+  margin: 0;
+  padding: 1.25rem 1.5rem 0;
+  color: var(--text-main);
+}
+
+.service-card-more {
+  margin-top: auto;
+  padding: 1rem 1.5rem 1.25rem;
+  text-align: right;
+  font-weight: 700;
+  color: var(--brand-primary);
+}
+
+.service-card:hover .service-card-more {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
 }
 
 @media (max-width: 800px) {
