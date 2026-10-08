@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sourceaccessibility.co.uk/sitemap.xml
