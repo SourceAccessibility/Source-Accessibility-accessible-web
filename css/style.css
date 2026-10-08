@@ -1177,6 +1177,12 @@ footer {
   margin: 0;
 }
 
+.copyright a {
+  color: var(--text-main);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
 /* Testimonial Section Base */
 .trusted-by {
   padding: var(--section-padding, 3.5rem 1.5rem);
