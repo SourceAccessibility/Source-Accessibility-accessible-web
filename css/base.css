@@ -1,0 +1,500 @@
+@import url("style.css");
+
+:root {
+  --hover-pink: #fce7f3;
+  --hover-pink-text: #020617;
+}
+
+.breadcrumb {
+  margin-bottom: 1.5rem;
+}
+
+.breadcrumb-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--brand-primary);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.breadcrumb-back:hover,
+.breadcrumb-back:focus-visible {
+  color: var(--hover-pink-text);
+  background-color: var(--hover-pink);
+  text-decoration: none;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
+.button-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--button-blue);
+  border-radius: 8px;
+  background-color: var(--button-blue);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.button-link:hover,
+.button-link:focus-visible {
+  border-color: var(--button-blue-hover);
+  background-color: var(--button-blue-hover);
+  color: var(--white);
+}
+
+.section-separator {
+  height: 4px;
+  background-color: var(--brand-primary);
+}
+
+.bg-alt {
+  background-color: var(--bg-alt);
+}
+
+.section-heading-banner {
+  margin: 0 0 1.5rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--brand-primary);
+  border-radius: 0.75rem;
+  background-color: var(--cat-test);
+  color: #1e293b;
+}
+
+.service-detail-page .contact-section {
+  padding: 4rem 0;
+  border-top: 4px solid var(--brand-primary);
+  background-color: var(--panel-surface);
+}
+
+.service-detail-page .contact-card {
+  border: 4px solid var(--brand-primary);
+}
+
+.service-detail-page main a:not(.button-link):not(.breadcrumb-back) {
+  color: var(--brand-primary);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+.service-detail-page main a:not(.button-link):not(.breadcrumb-back):hover,
+.service-detail-page main a:not(.button-link):not(.breadcrumb-back):focus-visible {
+  color: var(--text-main);
+  text-decoration-thickness: 2px;
+}
+
+.service-detail-page .service-card {
+  height: 100%;
+}
+
+.services-page .service-card > h4 > a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.services-page .service-card > h4 > a:hover,
+.services-page .service-card > h4 > a:focus-visible {
+  text-decoration-thickness: 2px;
+}
+
+.service-detail-page .service-card h3 {
+  margin: 0;
+  padding: 1rem 1.5rem;
+  background-color: var(--cat-test);
+  color: #1e293b;
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+.service-detail-page .service-card p {
+  padding: 1rem 1.5rem 0;
+  color: var(--text-main);
+}
+
+.service-detail-page .service-card ul {
+  margin: 0;
+  padding: 0.5rem 1.5rem 1.25rem 2.75rem;
+  color: var(--text-muted);
+}
+
+.service-detail-page .service-card li + li {
+  margin-top: 0.4rem;
+}
+
+.accessibility-audits-page .section-heading-banner {
+  border-color: var(--cat-improve);
+  background-color: var(--cat-improve);
+  color: #1e293b;
+}
+
+.accessibility-audits-page .pillar-card {
+  border-color: var(--cat-improve);
+}
+
+.accessibility-audits-page .pillar-card h3 {
+  background-color: var(--cat-improve);
+}
+
+.accessibility-audits-page .contact-section {
+  border-top-color: var(--cat-improve);
+}
+
+.accessibility-audits-page .contact-card {
+  border-color: var(--cat-improve);
+}
+
+.inclusive-design-page main section.hero {
+  border-bottom-color: var(--cat-improve);
+}
+
+.inclusive-design-page .section-separator {
+  background-color: var(--cat-improve);
+}
+
+.inclusive-design-page .section-heading-banner {
+  border-color: var(--cat-improve);
+  background-color: var(--cat-improve);
+  color: #1e293b;
+}
+
+.inclusive-design-page .pillar-card {
+  border-color: var(--cat-improve);
+}
+
+.inclusive-design-page .pillar-card h3 {
+  background-color: var(--cat-improve);
+}
+
+.inclusive-design-page .contact-section {
+  border-top-color: var(--cat-improve);
+}
+
+.inclusive-design-page .contact-card {
+  border-color: var(--cat-improve);
+}
+
+.accessibility-partnership-page main section.hero {
+  border-bottom-color: var(--cat-improve);
+}
+
+.accessibility-partnership-page .section-separator {
+  background-color: var(--cat-improve);
+}
+
+.accessibility-partnership-page .section-heading-banner {
+  border-color: var(--cat-improve);
+  background-color: var(--cat-improve);
+  color: #1e293b;
+}
+
+.accessibility-partnership-page .pillar-card {
+  border-color: var(--cat-improve);
+}
+
+.accessibility-partnership-page .pillar-card h3 {
+  background-color: var(--cat-improve);
+}
+
+.accessibility-partnership-page .contact-section {
+  border-top-color: var(--cat-improve);
+}
+
+.accessibility-partnership-page .contact-card {
+  border-color: var(--cat-improve);
+}
+
+.procurement-testing-page main section.hero {
+  border-bottom-color: var(--cat-specialist);
+}
+
+.procurement-testing-page .section-separator {
+  background-color: var(--cat-specialist);
+}
+
+.procurement-testing-page .section-heading-banner {
+  border-color: var(--cat-specialist);
+  background-color: var(--cat-specialist);
+  color: #1e293b;
+}
+
+.procurement-testing-page .pillar-card {
+  border-color: var(--cat-specialist);
+}
+
+.procurement-testing-page .pillar-card h3 {
+  background-color: var(--cat-specialist);
+}
+
+.procurement-testing-page .contact-section {
+  border-top-color: var(--cat-specialist);
+}
+
+.procurement-testing-page .contact-card {
+  border-color: var(--cat-specialist);
+}
+
+.accessibility-benchmarking-page main section.hero {
+  border-bottom-color: var(--cat-specialist);
+}
+
+.accessibility-benchmarking-page .section-separator {
+  background-color: var(--cat-specialist);
+}
+
+.accessibility-benchmarking-page .section-heading-banner {
+  border-color: var(--cat-specialist);
+  background-color: var(--cat-specialist);
+  color: #1e293b;
+}
+
+.accessibility-benchmarking-page .pillar-card {
+  border-color: var(--cat-specialist);
+}
+
+.accessibility-benchmarking-page .pillar-card h3 {
+  background-color: var(--cat-specialist);
+}
+
+.accessibility-benchmarking-page .contact-section {
+  border-top-color: var(--cat-specialist);
+  overflow-wrap: anywhere;
+}
+
+.accessibility-benchmarking-page .contact-card {
+  border-color: var(--cat-specialist);
+}
+
+.accessibility-benchmarking-page main {
+  overflow-wrap: anywhere;
+}
+
+.accessibility-benchmarking-page .button-link {
+  box-sizing: border-box;
+  max-width: 100%;
+  flex-wrap: wrap;
+  text-align: center;
+  white-space: normal;
+}
+
+.ai-agent-readiness-page main section.hero {
+  border-bottom-color: var(--cat-specialist);
+}
+
+.ai-agent-readiness-page .section-separator {
+  background-color: var(--cat-specialist);
+}
+
+.ai-agent-readiness-page .section-heading-banner {
+  border-color: var(--cat-specialist);
+  background-color: var(--cat-specialist);
+  color: #1e293b;
+}
+
+.ai-agent-readiness-page .pillar-card {
+  border-color: var(--cat-specialist);
+}
+
+.ai-agent-readiness-page .pillar-card h3 {
+  background-color: var(--cat-specialist);
+}
+
+.ai-agent-readiness-page .contact-section {
+  border-top-color: var(--cat-specialist);
+}
+
+.ai-agent-readiness-page .contact-card {
+  border-color: var(--cat-specialist);
+}
+
+.accessibility-demonstrations-page main section.hero {
+  border-bottom-color: var(--cat-specialist);
+}
+
+.accessibility-demonstrations-page .section-separator {
+  background-color: var(--cat-specialist);
+}
+
+.accessibility-demonstrations-page .section-heading-banner {
+  border-color: var(--cat-specialist);
+  background-color: var(--cat-specialist);
+  color: #1e293b;
+}
+
+.accessibility-demonstrations-page .pillar-card {
+  border-color: var(--cat-specialist);
+}
+
+.accessibility-demonstrations-page .pillar-card h3 {
+  background-color: var(--cat-specialist);
+}
+
+.accessibility-demonstrations-page .contact-section {
+  border-top-color: var(--cat-specialist);
+}
+
+.accessibility-demonstrations-page .contact-card {
+  border-color: var(--cat-specialist);
+}
+
+.accessibility-demonstrations-page main {
+  overflow-wrap: anywhere;
+}
+
+.accessibility-demonstrations-page .button-link {
+  box-sizing: border-box;
+  max-width: 100%;
+  flex-wrap: wrap;
+  text-align: center;
+  white-space: normal;
+}
+
+.accessibility-demonstrations-page .video-card {
+  max-width: 58rem;
+  margin: 1.5rem auto 0;
+  border-color: var(--cat-specialist);
+}
+
+.accessibility-demonstrations-page .video-aspect-ratio {
+  border-color: var(--cat-specialist);
+}
+
+.accessibility-demonstrations-page .video-feature-engagement {
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--cat-specialist);
+  border-left-width: 6px;
+  border-radius: 0.75rem;
+  background-color: var(--panel-surface);
+}
+
+.accessibility-demonstrations-page .video-feature-engagement h3 {
+  margin: 0 0 0.5rem;
+}
+
+.accessibility-demonstrations-page .video-feature-engagement p {
+  margin: 0;
+}
+
+.accessibility-training-page main section.hero {
+  border-bottom-color: var(--cat-specialist);
+}
+
+.accessibility-training-page .section-separator {
+  background-color: var(--cat-specialist);
+}
+
+.accessibility-training-page .section-heading-banner {
+  border-color: var(--cat-specialist);
+  background-color: var(--cat-specialist);
+  color: #1e293b;
+}
+
+.accessibility-training-page .pillar-card {
+  border-color: var(--cat-specialist);
+}
+
+.accessibility-training-page .pillar-card h3 {
+  background-color: var(--cat-specialist);
+}
+
+.accessibility-training-page .contact-section {
+  border-top-color: var(--cat-specialist);
+}
+
+.accessibility-training-page .contact-card {
+  border-color: var(--cat-specialist);
+}
+
+.travel-transport-accessibility-page main section.hero {
+  border-bottom-color: var(--cat-specialist);
+}
+
+.travel-transport-accessibility-page .section-separator {
+  background-color: var(--cat-specialist);
+}
+
+.travel-transport-accessibility-page .section-heading-banner {
+  border-color: var(--cat-specialist);
+  background-color: var(--cat-specialist);
+  color: #1e293b;
+}
+
+.travel-transport-accessibility-page .pillar-card {
+  border-color: var(--cat-specialist);
+}
+
+.travel-transport-accessibility-page .pillar-card h3 {
+  background-color: var(--cat-specialist);
+}
+
+.travel-transport-accessibility-page .contact-section {
+  border-top-color: var(--cat-specialist);
+}
+
+.travel-transport-accessibility-page .contact-card {
+  border-color: var(--cat-specialist);
+}
+
+.travel-transport-accessibility-page main {
+  overflow-wrap: anywhere;
+}
+
+.travel-transport-accessibility-page .button-link {
+  box-sizing: border-box;
+  max-width: 100%;
+  flex-wrap: wrap;
+  text-align: center;
+  white-space: normal;
+}
+
+.pillar-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pillar-card {
+  min-width: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  background-color: #1e293b;
+}
+
+.pillar-card h3 {
+  margin: 0;
+  padding: 1rem 1.5rem;
+  background-color: var(--cat-test);
+  color: #1e293b;
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+.pillar-card p {
+  margin: 0;
+  padding: 1.25rem 1.5rem;
+  color: var(--text-main);
+}
+
+@media (max-width: 700px) {
+  .pillar-grid {
+    grid-template-columns: 1fr;
+  }
+}

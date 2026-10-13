@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js" defer></script>
 </head>
-<body id="top">
+<body id="top" class="accessibility-statement-page">
 
   <!-- WCAG 2.4.1 Skip Link -->
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -27,7 +27,7 @@
     <div class="container">
       <div class="header-top">
         <div class="header-brand">
-          <a class="header-logo-link" href="index.html" aria-label="Source Accessibility home">
+          <a class="header-logo-link" href="/" aria-label="Source Accessibility home">
             <img class="header-logo" src="assets/img/SourceAccessibility Transp WebsiteBlue.png" alt="">
           </a>
           <div class="brand-text">
@@ -37,7 +37,7 @@
         </div>
         <nav class="main-nav" aria-label="Primary navigation">
           <ul class="nav-list">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="video.html">Video</a></li>
@@ -55,69 +55,44 @@
       <div class="container-narrow">
         <h1 id="statement-heading">Accessibility Statement</h1>
         <p class="hero-intro">
-          Source Accessibility Ltd is committed to ensuring digital accessibility for people of all abilities. We continually apply WCAG 2.2 AA standards to create an inclusive experience for every user.
+          Source Accessibility Ltd is committed to improving digital accessibility and uses WCAG 2.2 Level AA as its target. This statement describes our approach, the checks carried out on the locally generated website and the limitations that remain.
         </p>
       </div>
     </section>
 
     <!-- Main Statement Body -->
-    <section class="section--alternate-background" aria-labelledby="conformance-heading">
+    <section class="statement-content-section">
       <div class="container-narrow">
+        <div class="statement-content">
+          <section aria-labelledby="conformance-heading">
+            <h2 id="conformance-heading">Conformance Status</h2>
+            <p>The <strong>Web Content Accessibility Guidelines (WCAG) 2.2 Level AA</strong> provide the technical accessibility criteria used to evaluate this website. We aim to meet WCAG 2.2 Level AA, but do not currently claim full conformance.</p>
+            <p>Our accessibility approach also takes account of relevant UK legislation and guidance, including the Equality Act 2010 and the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018, where applicable.</p>
+          </section>
 
-        <article class="statement-card">
-          <h2 id="conformance-heading">Conformance Status</h2>
-          <p>
-            The <strong>Web Content Accessibility Guidelines (WCAG) 2.2 Level AA</strong> defines technical and design requirements for digital platforms.
-          </p>
-          <p>
-            We aim to meet WCAG 2.2 Level AA and have incorporated accessibility throughout the design, development and testing of the site. We do not currently claim full WCAG 2.2 Level AA conformance.
-          </p>
-        </article>
+          <section aria-labelledby="testing-heading">
+            <h2 id="testing-heading">Evaluation and testing</h2>
+            <p>An earlier audit of the locally generated website covered all 18 public pages. Its axe-core scan reported zero automated violations against the WCAG 2.0, 2.1 and 2.2 A/AA rules it checks. This result is not a conformance assessment and does not establish that every accessibility barrier has been found. The audit predates subsequent page updates, and the automated scan has not been rerun across the site since those changes.</p>
+            <p>That audit included structural checks of document language, headings, landmarks, image alternatives, link names, duplicate IDs and local links. Representative keyboard checks covered navigation and service-discovery journeys, including the skip link, header, contact route, footer and video embed. Responsive checks included 320, 768 and 1280 CSS pixel widths and a text-spacing override. A long-heading reflow issue found during those checks was corrected and rechecked across the generated pages.</p>
+            <p>These checks were limited to the methods and browser used for the local audit. This statement page has also been checked locally at 320 CSS pixels and with a 200% root-text-size simulation; that simulation is not a site-wide browser zoom test.</p>
+          </section>
 
-        <article class="statement-card">
-          <h3>Technical Architecture &amp; Compatibility</h3>
-          <p>
-            Our site relies on standard HTML5, CSS3, and ARIA attributes to support compatibility with modern web browsers and assistive technologies:
-          </p>
-          <ul>
-            <li><strong>Semantic HTML:</strong> Native landmarks (&lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, and &lt;footer&gt;) establish logical rotor navigation.</li>
-            <li><strong>Flexible Layouts:</strong> CSS Grid and Flexbox support reflow up to 400% zoom without horizontal scrolling.</li>
-            <li><strong>High-Contrast Focus:</strong> Focus indicators maintain a minimum 3:1 contrast ratio against background surfaces.</li>
-          </ul>
-        </article>
+          <section aria-labelledby="limitations-heading">
+            <h2 id="limitations-heading">Known limitations and checks outstanding</h2>
+            <p>The current version has not been fully verified with VoiceOver, NVDA or JAWS, Voice Control, or mobile screen readers. Actual 400% browser zoom and site-wide 200% text resizing have not been comprehensively tested.</p>
+            <p>The embedded video player and the accuracy and completeness of its captions have not received a full manual review. An earlier browser accessibility-tree inspection exposed a YouTube thumbnail control with the unclear name “thumbnail-image”; third-party player controls can change, so this needs checking in the current player.</p>
+            <p>These checks remain outstanding. Automated test results should not be taken as proof of WCAG conformance.</p>
+          </section>
 
-        <article class="statement-card">
-          <h3>Evaluation &amp; Verification Methodology</h3>
-          <p>
-            Accessibility on this site is verified through manual testing and assistive technology sweeps:
-          </p>
-          <ul>
-            <li><strong>Keyboard Navigation:</strong> Verified full keyboard operability, focus order, and skip links.</li>
-            <li><strong>Screen Readers:</strong> Tested with VoiceOver and NVDA across structural elements, interactive controls, and document links.</li>
-            <li><strong>Voice Control:</strong> Verified that visible link text matches programmatic accessible names for seamless voice targeting.</li>
-          </ul>
-        </article>
-
-        <article class="statement-card">
-          <h3>Feedback &amp; Contact Information</h3>
-          <p>
-            We welcome your feedback on the accessibility of this website. If you encounter any barriers or need information in an alternative format, please contact us:
-          </p>
-          <ul>
-            <li><strong>Email:</strong> <a href="mailto:info@sourceaccessibility.co.uk" class="email-link">info@sourceaccessibility.co.uk</a></li>
-            <li><strong>Direct Calendar:</strong> <a href="https://calendar.app.google/KPZ3KQfgMN6p5B9H9" target="_blank" rel="noopener" class="contact-link">
-              Book a 30-minute chat
-              <span class="sr-only">(opens in a new tab)</span>
-              <svg class="external-icon" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
-            </a></li>
-          </ul>
-          <p>We aim to respond to accessibility inquiries within 2 business days.</p>
-        </article>
-
+          <section aria-labelledby="feedback-heading">
+            <h2 id="feedback-heading">Feedback and contact</h2>
+            <p>We welcome feedback about the accessibility of this website. If you encounter a barrier or need information in another format, please contact us:</p>
+            <ul>
+              <li><strong>Email:</strong> <a href="mailto:info@sourceaccessibility.co.uk" class="email-link">info@sourceaccessibility.co.uk</a></li>
+              <li><strong>Book a 30-minute chat:</strong> <a href="https://calendar.app.google/KPZ3KQfgMN6p5B9H9" target="_blank" rel="noopener" class="contact-link">Book a 30-minute chat<span class="sr-only"> (opens in a new tab)</span></a></li>
+            </ul>
+          </section>
+        </div>
       </div>
     </section>
 
@@ -129,7 +104,7 @@
       <nav class="footer-nav" aria-label="Footer navigation">
         <ul class="footer-links">
           <li><a href="#top">Back to top</a></li>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="/">Home</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="video.html">Video</a></li>
